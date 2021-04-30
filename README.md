@@ -30,7 +30,7 @@ player.head; //return a render of the players head. Ex. https://crafatar.com/ren
 ```
 
 ## Example Usage
-(Try it out!)[https://withdrew.github.io/jsmc/]
+[See it in action](https://withdrew.github.io/jsmc/)
 ```html
 <script src="./jsmc@v1.0.js"></script>
 <script>
