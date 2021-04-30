@@ -12,7 +12,7 @@ jsmc(name);
 </script>
 ```
 
-## APIS
+## APIs used
 
 https://playerdb.co/
 
