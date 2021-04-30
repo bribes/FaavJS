@@ -15,7 +15,9 @@ jsmc(name);
 ## APIS
 
 https://playerdb.co/
+
 https://crafatar.com/
+
 https://api.gapple.pw/
 
 
