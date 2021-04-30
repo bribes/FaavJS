@@ -1,4 +1,4 @@
-# jsmc
+# JSMC
 
 ## Installation
 ```html 
