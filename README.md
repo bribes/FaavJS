@@ -28,3 +28,23 @@ player.avatar; //returns a render of the players avatar. Ex. https://crafatar.co
 player.head; //return a render of the players head. Ex. https://crafatar.com/renders/head/eb74d59271f84b1ea1b1ba76a12d8858?overlay
 
 ```
+
+## Example Usage
+(Try it out!)[https://withdrew.github.io/jsmc/]
+```html
+<script src="./jsmc@v1.0.js"></script>
+<script>
+  var name = "Seeped"; //Username Here
+function code() {
+document.getElementById("title").innerHTML = player.username;
+document.getElementById("uuid").innerHTML = `UUID: ${player.uuid}`;
+document.getElementById("img").src = player.avatar;
+document.getElementById("namehistory").innerHTML = `Original Name: ${player.name_history[0].name}`;
+}
+jsmc(name);
+</script>
+<h1 id="title"></h1>
+<p id="uuid"></p>
+<p id="namehistory"></p>
+<img id="img" src="" />
+```
