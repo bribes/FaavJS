@@ -2,7 +2,7 @@
 
 ## Installation
 ```html 
-<script src="https://withdrew.github.io/jsmc/jsmc@v1.0.js"></script>
+<script src="https://withdrew.github.io/jsmc/jsmc@v1.0.min.js"></script>
 <script>
   var name = "Seeped"; //Username Here
 function code() {
@@ -32,7 +32,7 @@ player.head; //return a render of the players head. Ex. https://crafatar.com/ren
 ## Example Usage
 [See it in action](https://withdrew.github.io/jsmc/)
 ```html
-<script src="https://withdrew.github.io/jsmc/jsmc@v1.0.js"></script>
+<script src="https://withdrew.github.io/jsmc/jsmc@v1.0.min.js"></script>
 <script>
   var name = "Seeped"; //Username Here
 function code() {
