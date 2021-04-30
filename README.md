@@ -12,6 +12,13 @@ jsmc(name);
 </script>
 ```
 
+## APIS
+
+https://playerdb.co/
+https://crafatar.com/
+https://api.gapple.pw/
+
+
 ## Usage
 
 ```javascript
