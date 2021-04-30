@@ -2,10 +2,14 @@
 
 ## Installation
 ```html 
-<script>
-  var username = "Seeped"; //Username to get data from
-</script>
 <script src="./jsmc@v1.0.js"></script>
+<script>
+  var name = "Seeped"; //Username Here
+function code() {
+//code here
+}
+jsmc(name);
+</script>
 ```
 
 ## Usage
