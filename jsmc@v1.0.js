@@ -1,4 +1,4 @@
-//Don't Edit
+/*copyright withdrew 2021*/
 async function jsmc(name) {
 await fetch("https://playerdb.co/api/player/minecraft/"+name).then(response => response.json()).then((main) => {
 player = new Object;
