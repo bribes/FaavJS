@@ -1,7 +1,6 @@
 //Don't Edit
-var API_URL = "https://playerdb.co/api/player/minecraft/"; //The API URL
-var API = API_URL + username; //Full API URL .DONT EDIT
-  fetch(API).then(response => response.json()).then((main) => {
+async function jsmc(name) {
+await fetch("https://playerdb.co/api/player/minecraft/"+name).then(response => response.json()).then((main) => {
 player = new Object;
 player.username = main.data.player.username;
 player.uuid = main.data.player.id;
@@ -15,4 +14,6 @@ player.cape = new Object;
 player.cape.official = `https://crafatar.com/capes/${player.id}`;
 player.cape.optifine = `https://api.gapple.pw/cors/optifine/${player.username}`;
 player.cape.labymod = `https://api.gapple.pw/cors/labymod/cape/${player.id}`;
+code();
 })
+}
