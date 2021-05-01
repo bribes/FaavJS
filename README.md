@@ -37,7 +37,7 @@ player.cosmetics.cape.labymod; //returns a image of the players laby mod cape. E
 player.cosmetics.bandana.labymod; //returns a image of the players laby mod bandana. Ex. https://api.gapple.pw/cors/labymod/bandana/65ec6b8e4d44439eaf64fe3b572f9b8b
 player.servers.hypixel.rank; //returns the players hypixel rank. Ex. YOUTUBER
 player.servers.hypixel.newPackageRank; //returns the players new hypixel rank. Ex. VIP_PLUS
-player.servers.hypixel.rank; //returns the players monthly hypixel rank. Ex. SUPERSTAR (SUPERSTAR is MVP++)
+player.servers.hypixel.monthlyPackageRank; //returns the players monthly hypixel rank. Ex. SUPERSTAR (SUPERSTAR is MVP++)
 player.servers.hypixel.firstLogin;  //returns the players first login on hypixel.
 player.servers.hypixel.lastLogin; //returns the players last login on hypixel.
 player.servers.hypixel.lastLogout; //returns the players last logout on hypixel.
