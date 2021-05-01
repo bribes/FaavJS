@@ -52,11 +52,12 @@ player.error; //returns if there is a error or not. The response can either be t
 ## Usage Example
 [See it in action](https://withdrew.github.io/jsmc/)
 ```html
+
 <html>
    <head>
       <script src="https://withdrew.github.io/jsmc/jsmc@v1.3.min.js"></script>
       <script>
-         var name = "Seeped"; //Username Here
+var name = "Seeped"; //Username Here
          function code() {
             var type = null;
             if (player.type == "msa") {
@@ -66,6 +67,94 @@ player.error; //returns if there is a error or not. The response can either be t
             } else if (player.type == "legacy") {
             type = "Legacy";
             }
+            if (player.servers.hypixel.newPackageRank != undefined) {
+                                if (player.servers.hypixel.rank != undefined) {
+                                    if (player.servers.hypixel.rank == "YOUTUBER")
+                                    {
+                                       document.getElementById("text").innerHTML = "Hypixel Rank:";
+                                        document.getElementById('hypixelRank').innerHTML = "<span style='color: #AA0000;'>" + "YOU" + "</span>" + "<span style='color: #FFFFFF;'>" + "TUBER" + "</span>";
+                                    }
+                                    else {
+                                       document.getElementById("text").innerHTML = "Hypixel Rank:";
+                                        document.getElementById('hypixelRank').innerHTML = "<span style='color: #FFAA00;'>" + player.servers.hypixel.rank + "</span>";
+                                    }
+                                }
+                                else {
+                                   document.getElementById("text").innerHTML = "Hypixel Rank:";
+                                    if (player.servers.hypixel.newPackageRank == "VIP")
+                                    {
+                                        document.getElementById('hypixelRank').innerHTML = "<span style='color: #55FF55;'>" + "VIP" + "</span>";
+                                    }
+                                    else if (player.servers.hypixel.newPackageRank== "VIP_PLUS")
+                                    {
+                                        document.getElementById('hypixelRank').innerHTML = "<span style='color: #55FF55;'>" + "VIP" + "</span>" + "<span style='color: #FFAA00;'>" + "+" + "</span>";
+                                    }
+                                    else if (player.servers.hypixel.newPackageRank == "MVP")
+                                    {
+                                        document.getElementById('hypixelRank').innerHTML = "<span style='color: #55FFFF;'>" + "MVP" + "</span>";
+                                    }
+                                    else if (player.servers.hypixel.newPackageRank == "MVP_PLUS")
+                                    {
+                                        if (player.servers.hypixel.monthlyPackageRank != undefined && player.servers.hypixel.monthlyPackageRank == "SUPERSTAR")
+                                        {
+                                            document.getElementById('hypixelRank').innerHTML = "<span style='color: #55FFFF;'>" + "MVP" + "</span>" + "<span style='color: #FF5555;'>" + "++" + "</span>";
+                                        }
+                                        else {
+                                            document.getElementById('hypixelRank').innerHTML = "<span style='color: #55FFFF;'>" + "MVP" + "</span>" + "<span style='color: #FF5555;'>" + "+" + "</span>";
+                                        }
+                                    }
+                                    else if (player.servers.hypixel.newPackageRank == "BUILDTEAM")
+                                    {
+                                        document.getElementById('hypixelRank').innerHTML = "<span style='color: #00AAAA;'>" + "BUILDTEAM" + "</span>";
+                                    }
+                                    else if (player.servers.hypixel.newPackageRank == "BUILDTEAM_PLUS")
+                                    {
+                                        document.getElementById('hypixelRank').innerHTML = "<span style='color: #00AAAA;'>" + "BUILDTEAM" + "</span>" + "<span style='color: #FF5555;'>" + "+" + "</span>";
+                                    }
+                                    else if (player.servers.hypixel.newPackageRank == "APPLE")
+                                    {
+                                        document.getElementById('hypixelRank').innerHTML = "<span style='color: #FFAA00;'>" + "APPLE" + "</span>";
+                                    }
+                                    else if (player.servers.hypixel.newPackageRank == "MOJANG")
+                                    {
+                                        document.getElementById('hypixelRank').innerHTML = "<span style='color: #FFAA00;'>" + "MOJANG" + "</span>";
+                                    }
+                                    else if (player.servers.hypixel.newPackageRank == "YT")
+                                    {
+                                        document.getElementById('hypixelRank').innerHTML = "<span style='color: #FFAA00;'>" + "YT" + "</span>";
+                                    }
+                                    else if (player.servers.hypixel.newPackageRank == "HELPER")
+                                    {
+                                        document.getElementById('hypixelRank').innerHTML = "<span style='color: #0000AA;'>" + "HELPER" + "</span>";
+                                    }
+                                    else if (player.servers.hypixel.newPackageRank == "MOD")
+                                    {
+                                        document.getElementById('hypixelRank').innerHTML = "<span style='color: #00AA00;'>" + "MOD" + "</span>";
+                                    }
+                                    else if (player.servers.hypixel.newPackageRank == "SLOTH")
+                                    {
+                                        document.getElementById('hypixelRank').innerHTML = "<span style='color: #FF5555;'>" + "SLOTH" + "</span>";
+                                    }
+                                    else if (player.servers.hypixel.newPackageRank == "MCPROHOSTING")
+                                    {
+                                        document.getElementById('hypixelRank').innerHTML = "<span style='color: #FF5555;'>" + "MCPROHOSTING" + "</span>";
+                                    }
+                                    else if (player.servers.hypixel.newPackageRank == "ADMIN")
+                                    {
+                                        document.getElementById('hypixelRank').innerHTML = "<span style='color: #FF5555;'>" + "ADMIN" + "</span>";
+                                    }
+                                    else if (player.servers.hypixel.newPackageRank == "OWNER")
+                                    {
+                                        document.getElementById('hypixelRank').innerHTML = "<span style='color: #FF5555;'>" + "OWNER" + "</span>";
+                                    }
+                                    else {
+                                        document.getElementById('hypixelRank').innerHTML = "<span style='color: #FFFFFF;'>" + "None" + "</span>";
+                                    }
+                                }
+                            }
+                            else {
+                                document.getElementById('hypixelRank').innerHTML = "No data found";
+                            }
          document.getElementById("title").innerHTML = player.username;
          document.getElementById("uuid").innerHTML = `UUID: ${player.uuid}`;
          document.getElementById("uuid").innerHTML = `Account Type: ${type}`;
@@ -78,10 +167,13 @@ player.error; //returns if there is a error or not. The response can either be t
    </head>
    <body>
       <h1 id="title"></h1>
-      <p id="uuid"></p>
-      <p id="type"></p>
-      <p id="namehistory"></p>
+      <span id="uuid"></span><br>
+      <span id="type"></span><br>
+      <span id="namehistory"></span><br>
+      <br><span id="text"></span>
+      <div id="hypixelRank"></div>
       <img id="img" src="">
    </body>
 </html>
+
 ```
