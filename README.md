@@ -53,9 +53,13 @@ player.error; //returns if there is a error or not. The response can either be t
 ## Usage Example
 [See it in action](https://withdrew.github.io/jsmc/)
 ```html
+
 <html>
    <head>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
       <script src="https://withdrew.github.io/jsmc/jsmc@v1.3.min.js"></script>
+      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://unpkg.com/purecss@2.0.5/build/pure-min.css" rel="stylesheet">
       <script>
          var name = "Seeped"; //Username Here
                   function code() {
@@ -75,12 +79,12 @@ player.error; //returns if there is a error or not. The response can either be t
                                                  document.getElementById('hypixelRank').innerHTML += "<span style='color: #AA0000;'>" + "YOU" + "</span>" + "<span style='color: #FFFFFF;'>" + "TUBER" + "</span>";
                                              }
                                              else {
-                                                document.getElementById("hypixelRank").innerHTML += "Hypixel Rank:";
+                                                document.getElementById("hypixelRank").innerHTML += "Hypixel Rank: ";
                                                  document.getElementById('hypixelRank').innerHTML += "<span style='color: #FFAA00;'>" + player.servers.hypixel.rank + "</span>";
                                              }
                                          }
                                          else {
-                                            document.getElementById("hypixelRank").innerHTML += "Hypixel Rank:";
+                                            document.getElementById("hypixelRank").innerHTML += "Hypixel Rank: ";
                                              if (player.servers.hypixel.newPackageRank == "VIP")
                                              {
                                                  document.getElementById('hypixelRank').innerHTML += "<span style='color: #55FF55;'>" + "VIP" + "</span>";
@@ -172,6 +176,7 @@ player.error; //returns if there is a error or not. The response can either be t
       </script>
       <title>Usage Example</title>
    </head>
+<center>
    <body>
       <h1 id="title"></h1>
       <span id="uuid"></span><br>
@@ -183,5 +188,6 @@ player.error; //returns if there is a error or not. The response can either be t
       <br>
       <img id="img" src="">
    </body>
+</center>
 </html>
 ```
