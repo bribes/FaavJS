@@ -53,7 +53,6 @@ player.error; //returns if there is a error or not. The response can either be t
 ## Usage Example
 [See it in action](https://withdrew.github.io/jsmc/)
 ```html
-
 <html>
    <head>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -63,6 +62,10 @@ player.error; //returns if there is a error or not. The response can either be t
       <script>
          var name = "Seeped"; //Username Here
                   function code() {
+         function roundNumber(rnum, rlength) { 
+         var newnumber = Math.round(rnum * Math.pow(10, rlength)) / Math.pow(10, rlength);
+         return newnumber;
+         }
                      var type = null;
                      if (player.type == "msa") {
                      type = "Microsoft";
@@ -160,7 +163,7 @@ player.error; //returns if there is a error or not. The response can either be t
                                          document.getElementById('hypixelRank').innerHTML += "No data found";
                                      }
                   document.getElementById("title").innerHTML = player.username;
-                  document.getElementById("uuid").innerHTML = `UUID: ${player.uuid}`;
+                  document.getElementById("uuid").innerHTML = `UUID: ${player.id}`;
                   document.getElementById("type").innerHTML = `Account Type: ${type}`;
                   document.getElementById("img").src = player.avatar;
                   document.getElementById("namehistory").innerHTML = `Original Name: ${player.name_history[0].name}`;
@@ -169,25 +172,26 @@ player.error; //returns if there is a error or not. The response can either be t
          } else {
          var status = "Offline";
          }
-                  document.getElementById("online").innerHTML = `Status: ${status}`;
+                  document.getElementById("status").innerHTML = `Hypixel Player Status: ${status}`;
+         var lvl = roundNumber((Math.sqrt((2 * player.servers.hypixel.networkExp) + 30625) / 50) - 2.5, 2);
+         document.getElementById("level").innerHTML = `Hypixel Level: ${lvl}`
                   }
                   jsmc(name);
                
       </script>
       <title>Usage Example</title>
    </head>
-<center>
-   <body>
-      <h1 id="title"></h1>
-      <span id="uuid"></span><br>
-      <br><span id="type"></span><br>
-      <span id="status"></span><br>
-      <span id="namehistory"></span><br>
-      <br>
-      <div id="hypixelRank"></div>
-      <br>
-      <img id="img" src="">
-   </body>
-</center>
+   <center>
+      <body>
+         <h1 id="title"></h1>
+         <span id="uuid"></span><br>
+         <span id="type"></span><br>
+         <span id="level"></span><br>
+         <span id="status"></span><br>
+         <div id="hypixelRank"></div>
+         <span id="namehistory"></span><br>
+         <img id="img" src="">
+      </body>
+   </center>
 </html>
 ```
