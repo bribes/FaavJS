@@ -46,22 +46,31 @@ player.error; //returns if there is a error or not. The response can either be t
 ```html
 <html>
    <head>
-      <script src="https://withdrew.github.io/jsmc/jsmc@v1.1.min.js"></script>
+      <script src="https://withdrew.github.io/jsmc/jsmc@v1.2.min.js"></script>
       <script>
          var name = "Seeped"; //Username Here
          function code() {
+            var type = null;
+            if (player.type == "msa") {
+            type = "Microsoft";
+            } else if (player.type == "mojang") {
+            type = "Mojang";
+            } else if (player.type == "legacy") {
+            type = "Legacy";
+            }
          document.getElementById("title").innerHTML = player.username;
          document.getElementById("uuid").innerHTML = `UUID: ${player.uuid}`;
+         document.getElementById("uuid").innerHTML = `Account Type: ${type}`;
          document.getElementById("img").src = player.avatar;
          document.getElementById("namehistory").innerHTML = `Original Name: ${player.name_history[0].name}`;
          }
          jsmc(name);
       </script>
-      <title></title>
    </head>
    <body>
       <h1 id="title"></h1>
       <p id="uuid"></p>
+      <p id="type"></p>
       <p id="namehistory"></p>
       <img id="img" src="">
    </body>
