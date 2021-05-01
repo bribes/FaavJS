@@ -1,11 +1,12 @@
 <html>
    <head>
-      <script src="https://withdrew.github.io/jsmc/jsmc@v1.1.min.js"></script>
+      <script src="https://withdrew.github.io/jsmc/jsmc@v1.2.min.js"></script>
       <script>
          var name = "Seeped"; //Username Here
          function code() {
          document.getElementById("title").innerHTML = player.username;
          document.getElementById("uuid").innerHTML = `UUID: ${player.uuid}`;
+         document.getElementById("uuid").innerHTML = `Account Type: ${player.status}`;
          document.getElementById("img").src = player.avatar;
          document.getElementById("namehistory").innerHTML = `Original Name: ${player.name_history[0].name}`;
          }
@@ -16,6 +17,7 @@
    <body>
       <h1 id="title"></h1>
       <p id="uuid"></p>
+      <p id="type"></p>
       <p id="namehistory"></p>
       <img id="img" src="">
    </body>
