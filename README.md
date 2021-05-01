@@ -46,6 +46,7 @@ player.servers.hypixel.firstLogin;  //returns the players first login on hypixel
 player.servers.hypixel.lastLogin; //returns the players last login on hypixel.
 player.servers.hypixel.lastLogout; //returns the players last logout on hypixel.
 player.servers.hypixel.networkExp; //returns the players hypixel network experience.
+player.servers.hypixel.networkLevel; //returns the players hypixel network level.
 player.servers.hypixel.karma; //returns the players hypixel karma.
 player.servers.hypixel.guild.name; //returns the guild name of the guild the player is currently in.
 player.servers.hypixel.guild.createdAt; //returns the creation date of the guild that the player is in.
@@ -71,10 +72,6 @@ player.error; //returns if there is a error or not. The response can either be t
       <script>
          var name = "Seeped"; //Username Here
                   function code() {
-         function roundNumber(rnum, rlength) { 
-         var newnumber = Math.round(rnum * Math.pow(10, rlength)) / Math.pow(10, rlength);
-         return newnumber;
-         }
                      var type = null;
                      if (player.type == "msa") {
                      type = "Microsoft";
@@ -182,8 +179,7 @@ player.error; //returns if there is a error or not. The response can either be t
          var status = "Offline";
          }
                   document.getElementById("status").innerHTML = `Hypixel Player Status: ${status}`;
-         var lvl = roundNumber((Math.sqrt((2 * player.servers.hypixel.networkExp) + 30625) / 50) - 2.5, 2);
-         document.getElementById("level").innerHTML = `Hypixel Level: ${lvl}`
+         document.getElementById("level").innerHTML = `Hypixel Level: ${player.servers.hypixel.networkLevel}`
                   }
                   jsmc(name);
                
