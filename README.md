@@ -41,7 +41,7 @@ player.head; //returns a render of the players head. Ex. https://crafatar.com/re
 player.error; //returns if there is a error or not. The response can either be true or false.
 ```
 
-## Example Usage
+## Usage Example
 [See it in action](https://withdrew.github.io/jsmc/)
 ```html
 <html>
@@ -66,6 +66,7 @@ player.error; //returns if there is a error or not. The response can either be t
          }
          jsmc(name);
       </script>
+      <title>Usage Example</title>
    </head>
    <body>
       <h1 id="title"></h1>
