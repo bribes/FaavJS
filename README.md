@@ -2,7 +2,7 @@
 
 ## Installation
 ```html 
-<script src="https://withdrew.github.io/jsmc/jsmc@v1.2.min.js"></script>
+<script src="https://withdrew.github.io/jsmc/jsmc@v1.3.min.js"></script>
 <script>
   var name = "Seeped"; //Username Here
 function code() {
@@ -35,6 +35,12 @@ player.cosmetics.cape.official; //returns a image of the players official cape. 
 player.cosmetics.cape.optifine; //returns a image of the players optifine cape. Ex. https://api.gapple.pw/cors/optifine/Seeped
 player.cosmetics.cape.labymod; //returns a image of the players laby mod cape. Ex. https://api.gapple.pw/cors/labymod/cape/6a836b80-2488-4703-85a7-f130b2097ee0
 player.cosmetics.bandana.labymod; //returns a image of the players laby mod bandana. Ex. https://api.gapple.pw/cors/labymod/bandana/65ec6b8e4d44439eaf64fe3b572f9b8b
+player.servers.hypixel.rank; //returns the players hypixel rank. Ex. VIP_PLUS
+player.servers.hypixel.firstLogin;  //returns the players first login on hypixel.
+player.servers.hypixel.lastLogin; //returns the players last login on hypixel.
+player.servers.hypixel.lastLogout; //returns the players last logout on hypixel.
+player.servers.hypixel.networkExp; //returns the players hypixel network experience.
+player.servers.hypixel.karma; //returns the players hypixel karma.
 player.icon; //return an image of the players head. Ex. https://crafatar.com/avatars/eb74d59271f84b1ea1b1ba76a12d8858?overlay
 player.avatar; //returns a render of the players avatar. Ex. https://crafatar.com/renders/body/eb74d59271f84b1ea1b1ba76a12d8858?overlay
 player.head; //returns a render of the players head. Ex. https://crafatar.com/renders/head/eb74d59271f84b1ea1b1ba76a12d8858?overlay
@@ -46,7 +52,7 @@ player.error; //returns if there is a error or not. The response can either be t
 ```html
 <html>
    <head>
-      <script src="https://withdrew.github.io/jsmc/jsmc@v1.2.min.js"></script>
+      <script src="https://withdrew.github.io/jsmc/jsmc@v1.3.min.js"></script>
       <script>
          var name = "Seeped"; //Username Here
          function code() {
