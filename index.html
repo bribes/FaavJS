@@ -6,10 +6,6 @@
       <link href="https://unpkg.com/purecss@2.0.5/build/pure-min.css" rel="stylesheet">
       <script>
          var name = "Seeped"; //Username Here
-         function roundNumber(rnum, rlength) { 
-         var newnumber = Math.round(rnum * Math.pow(10, rlength)) / Math.pow(10, rlength);
-         return newnumber;
-         }
                   function code() {
                      var type = null;
                      if (player.type == "msa") {
@@ -118,8 +114,7 @@
          var status = "Offline";
          }
                   document.getElementById("status").innerHTML = `Hypixel Player Status: ${status}`;
-         var lvl = roundNumber((Math.sqrt((2 * player.servers.hypixel.networkExp) + 30625) / 50) - 2.5, 2);
-         document.getElementById("level").innerHTML = `Hypixel Level: ${lvl}`
+         document.getElementById("level").innerHTML = `Hypixel Level: ${player.servers.hypixel.networkLevel}`
                   }
                   jsmc(name);
                
