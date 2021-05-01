@@ -2,7 +2,7 @@
 
 ## Installation
 ```html 
-<script src="https://withdrew.github.io/jsmc/jsmc@v1.3.min.js"></script>
+<script src="https://withdrew.github.io/jsmc/jsmc@v1.4.min.js"></script>
 <script>
   var name = "Seeped"; //Username Here
 function code() {
@@ -35,6 +35,7 @@ player.cosmetics.cape.official; //returns a image of the players official cape. 
 player.cosmetics.cape.optifine; //returns a image of the players optifine cape. Ex. https://api.gapple.pw/cors/optifine/Seeped
 player.cosmetics.cape.labymod; //returns a image of the players laby mod cape. Ex. https://api.gapple.pw/cors/labymod/cape/6a836b80-2488-4703-85a7-f130b2097ee0
 player.cosmetics.bandana.labymod; //returns a image of the players laby mod bandana. Ex. https://api.gapple.pw/cors/labymod/bandana/65ec6b8e4d44439eaf64fe3b572f9b8b
+player.servers.hypixel.success; //returns true or false depending if getting the player data was successful.
 player.servers.hypixel.rank; //returns the players hypixel rank. Ex. YOUTUBER
 player.servers.hypixel.newPackageRank; //returns the players new hypixel rank. Ex. VIP_PLUS
 player.servers.hypixel.monthlyPackageRank; //returns the players monthly hypixel rank. Ex. SUPERSTAR (SUPERSTAR is MVP++)
@@ -44,6 +45,12 @@ player.servers.hypixel.lastLogin; //returns the players last login on hypixel.
 player.servers.hypixel.lastLogout; //returns the players last logout on hypixel.
 player.servers.hypixel.networkExp; //returns the players hypixel network experience.
 player.servers.hypixel.karma; //returns the players hypixel karma.
+player.servers.hypixel.guild.name; //returns the guild name of the guild the player is currently in.
+player.servers.hypixel.guild.createdAt; //returns the creation date of the guild that the player is in.
+player.servers.hypixel.guild.members; //returns the members of the guild the player is currently in.
+player.servers.hypixel.guild.coins; //returns the amount of coins the guild that the player is in currently has
+player.servers.hypixel.guild.coinsEver; //returns the amount of coins the guild that the player is in has ever had
+player.servers.hypixel.guild.success;  //returns true or false depending if getting the guild data was successful.
 player.icon; //returns an image of the players head. Ex. https://crafatar.com/avatars/eb74d59271f84b1ea1b1ba76a12d8858?overlay
 player.avatar; //returns a render of the players avatar. Ex. https://crafatar.com/renders/body/eb74d59271f84b1ea1b1ba76a12d8858?overlay
 player.head; //returns a render of the players head. Ex. https://crafatar.com/renders/head/eb74d59271f84b1ea1b1ba76a12d8858?overlay
