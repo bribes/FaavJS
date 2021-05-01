@@ -38,12 +38,13 @@ player.cosmetics.bandana.labymod; //returns a image of the players laby mod band
 player.servers.hypixel.rank; //returns the players hypixel rank. Ex. YOUTUBER
 player.servers.hypixel.newPackageRank; //returns the players new hypixel rank. Ex. VIP_PLUS
 player.servers.hypixel.monthlyPackageRank; //returns the players monthly hypixel rank. Ex. SUPERSTAR (SUPERSTAR is MVP++)
+player.servers.hypixel.online; //returns true or false depending on if the player is online or offline.
 player.servers.hypixel.firstLogin;  //returns the players first login on hypixel.
 player.servers.hypixel.lastLogin; //returns the players last login on hypixel.
 player.servers.hypixel.lastLogout; //returns the players last logout on hypixel.
 player.servers.hypixel.networkExp; //returns the players hypixel network experience.
 player.servers.hypixel.karma; //returns the players hypixel karma.
-player.icon; //return an image of the players head. Ex. https://crafatar.com/avatars/eb74d59271f84b1ea1b1ba76a12d8858?overlay
+player.icon; //returns an image of the players head. Ex. https://crafatar.com/avatars/eb74d59271f84b1ea1b1ba76a12d8858?overlay
 player.avatar; //returns a render of the players avatar. Ex. https://crafatar.com/renders/body/eb74d59271f84b1ea1b1ba76a12d8858?overlay
 player.head; //returns a render of the players head. Ex. https://crafatar.com/renders/head/eb74d59271f84b1ea1b1ba76a12d8858?overlay
 player.error; //returns if there is a error or not. The response can either be true or false.
