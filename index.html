@@ -4,9 +4,17 @@
       <script>
          var name = "Seeped"; //Username Here
          function code() {
+            var type = null;
+            if (player.type == "MSA") {
+            type = "Microsoft";
+            } else if (player.type == "mojang") {
+            type = "Mojang";
+            } else if (player.type == "legacy") {
+            type = "Legacy";
+            }
          document.getElementById("title").innerHTML = player.username;
          document.getElementById("uuid").innerHTML = `UUID: ${player.uuid}`;
-         document.getElementById("uuid").innerHTML = `Account Type: ${player.status}`;
+         document.getElementById("uuid").innerHTML = `Account Type: ${type}`;
          document.getElementById("img").src = player.avatar;
          document.getElementById("namehistory").innerHTML = `Original Name: ${player.name_history[0].name}`;
          }
