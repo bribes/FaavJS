@@ -14,16 +14,18 @@ var name = "Seeped"; //Username Here
             }
             if (player.servers.hypixel.newPackageRank != undefined) {
                                 if (player.servers.hypixel.rank != undefined) {
-                                   document.getElementById("text").innerHTML = "Hypixel Rank:";
                                     if (player.servers.hypixel.rank == "YOUTUBER")
                                     {
+                                       document.getElementById("text").innerHTML = "Hypixel Rank:";
                                         document.getElementById('hypixelRank').innerHTML = "<span style='color: #AA0000;'>" + "YOU" + "</span>" + "<span style='color: #FFFFFF;'>" + "TUBER" + "</span>";
                                     }
                                     else {
+                                       document.getElementById("text").innerHTML = "Hypixel Rank:";
                                         document.getElementById('hypixelRank').innerHTML = "<span style='color: #FFAA00;'>" + player.servers.hypixel.rank + "</span>";
                                     }
                                 }
                                 else {
+                                   document.getElementById("text").innerHTML = "Hypixel Rank:";
                                     if (player.servers.hypixel.newPackageRank == "VIP")
                                     {
                                         document.getElementById('hypixelRank').innerHTML = "<span style='color: #55FF55;'>" + "VIP" + "</span>";
@@ -113,7 +115,7 @@ var name = "Seeped"; //Username Here
       <span id="uuid"></span><br>
       <span id="type"></span><br>
       <span id="namehistory"></span><br>
-      <span id="text"></span>
+      <br><span id="text"></span>
       <div id="hypixelRank"></div>
       <img id="img" src="">
    </body>
