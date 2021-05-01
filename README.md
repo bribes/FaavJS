@@ -53,11 +53,10 @@ player.error; //returns if there is a error or not. The response can either be t
 ## Usage Example
 [See it in action](https://withdrew.github.io/jsmc/)
 ```html
-
 <html>
-   <head>
-      <script src="https://withdrew.github.io/jsmc/jsmc@v1.3.min.js"></script>
-      <script>
+	<head>
+		<script src="https://withdrew.github.io/jsmc/jsmc@v1.3.min.js"></script>
+		<script>
 var name = "Seeped"; //Username Here
          function code() {
             var type = null;
@@ -72,89 +71,113 @@ var name = "Seeped"; //Username Here
                                 if (player.servers.hypixel.rank != undefined) {
                                     if (player.servers.hypixel.rank == "YOUTUBER")
                                     {
-                                       document.getElementById("text").innerHTML = "Hypixel Rank:";
-                                        document.getElementById('hypixelRank').innerHTML = "<span style='color: #AA0000;'>" + "YOU" + "</span>" + "<span style='color: #FFFFFF;'>" + "TUBER" + "</span>";
+                                       document.getElementById("hypixelRank").innerHTML += "Hypixel Rank: ";
+                                        document.getElementById('hypixelRank').innerHTML += "
+			<span style='color: #AA0000;'>" + "YOU" + "</span>" + "
+			<span style='color: #FFFFFF;'>" + "TUBER" + "</span>";
                                     }
                                     else {
-                                       document.getElementById("text").innerHTML = "Hypixel Rank:";
-                                        document.getElementById('hypixelRank').innerHTML = "<span style='color: #FFAA00;'>" + player.servers.hypixel.rank + "</span>";
+                                       document.getElementById("hypixelRank").innerHTML += "Hypixel Rank:";
+                                        document.getElementById('hypixelRank').innerHTML += "
+			<span style='color: #FFAA00;'>" + player.servers.hypixel.rank + "</span>";
                                     }
                                 }
                                 else {
-                                   document.getElementById("text").innerHTML = "Hypixel Rank:";
+                                   document.getElementById("hypixelRank").innerHTML += "Hypixel Rank:";
                                     if (player.servers.hypixel.newPackageRank == "VIP")
                                     {
-                                        document.getElementById('hypixelRank').innerHTML = "<span style='color: #55FF55;'>" + "VIP" + "</span>";
+                                        document.getElementById('hypixelRank').innerHTML += "
+			<span style='color: #55FF55;'>" + "VIP" + "</span>";
                                     }
                                     else if (player.servers.hypixel.newPackageRank== "VIP_PLUS")
                                     {
-                                        document.getElementById('hypixelRank').innerHTML = "<span style='color: #55FF55;'>" + "VIP" + "</span>" + "<span style='color: #FFAA00;'>" + "+" + "</span>";
+                                        document.getElementById('hypixelRank').innerHTML += "
+			<span style='color: #55FF55;'>" + "VIP" + "</span>" + "
+			<span style='color: #FFAA00;'>" + "+" + "</span>";
                                     }
                                     else if (player.servers.hypixel.newPackageRank == "MVP")
                                     {
-                                        document.getElementById('hypixelRank').innerHTML = "<span style='color: #55FFFF;'>" + "MVP" + "</span>";
+                                        document.getElementById('hypixelRank').innerHTML += "
+			<span style='color: #55FFFF;'>" + "MVP" + "</span>";
                                     }
                                     else if (player.servers.hypixel.newPackageRank == "MVP_PLUS")
                                     {
                                         if (player.servers.hypixel.monthlyPackageRank != undefined && player.servers.hypixel.monthlyPackageRank == "SUPERSTAR")
                                         {
-                                            document.getElementById('hypixelRank').innerHTML = "<span style='color: #55FFFF;'>" + "MVP" + "</span>" + "<span style='color: #FF5555;'>" + "++" + "</span>";
+                                            document.getElementById('hypixelRank').innerHTML += "
+			<span style='color: #55FFFF;'>" + "MVP" + "</span>" + "
+			<span style='color: #FF5555;'>" + "++" + "</span>";
                                         }
                                         else {
-                                            document.getElementById('hypixelRank').innerHTML = "<span style='color: #55FFFF;'>" + "MVP" + "</span>" + "<span style='color: #FF5555;'>" + "+" + "</span>";
+                                            document.getElementById('hypixelRank').innerHTML += "
+			<span style='color: #55FFFF;'>" + "MVP" + "</span>" + "
+			<span style='color: #FF5555;'>" + "+" + "</span>";
                                         }
                                     }
                                     else if (player.servers.hypixel.newPackageRank == "BUILDTEAM")
                                     {
-                                        document.getElementById('hypixelRank').innerHTML = "<span style='color: #00AAAA;'>" + "BUILDTEAM" + "</span>";
+                                        document.getElementById('hypixelRank').innerHTML += "
+			<span style='color: #00AAAA;'>" + "BUILDTEAM" + "</span>";
                                     }
                                     else if (player.servers.hypixel.newPackageRank == "BUILDTEAM_PLUS")
                                     {
-                                        document.getElementById('hypixelRank').innerHTML = "<span style='color: #00AAAA;'>" + "BUILDTEAM" + "</span>" + "<span style='color: #FF5555;'>" + "+" + "</span>";
+                                        document.getElementById('hypixelRank').innerHTML += "
+			<span style='color: #00AAAA;'>" + "BUILDTEAM" + "</span>" + "
+			<span style='color: #FF5555;'>" + "+" + "</span>";
                                     }
                                     else if (player.servers.hypixel.newPackageRank == "APPLE")
                                     {
-                                        document.getElementById('hypixelRank').innerHTML = "<span style='color: #FFAA00;'>" + "APPLE" + "</span>";
+                                        document.getElementById('hypixelRank').innerHTML += "
+			<span style='color: #FFAA00;'>" + "APPLE" + "</span>";
                                     }
                                     else if (player.servers.hypixel.newPackageRank == "MOJANG")
                                     {
-                                        document.getElementById('hypixelRank').innerHTML = "<span style='color: #FFAA00;'>" + "MOJANG" + "</span>";
+                                        document.getElementById('hypixelRank').innerHTML += "
+			<span style='color: #FFAA00;'>" + "MOJANG" + "</span>";
                                     }
                                     else if (player.servers.hypixel.newPackageRank == "YT")
                                     {
-                                        document.getElementById('hypixelRank').innerHTML = "<span style='color: #FFAA00;'>" + "YT" + "</span>";
+                                        document.getElementById('hypixelRank').innerHTML += "
+			<span style='color: #FFAA00;'>" + "YT" + "</span>";
                                     }
                                     else if (player.servers.hypixel.newPackageRank == "HELPER")
                                     {
-                                        document.getElementById('hypixelRank').innerHTML = "<span style='color: #0000AA;'>" + "HELPER" + "</span>";
+                                        document.getElementById('hypixelRank').innerHTML += "
+			<span style='color: #0000AA;'>" + "HELPER" + "</span>";
                                     }
                                     else if (player.servers.hypixel.newPackageRank == "MOD")
                                     {
-                                        document.getElementById('hypixelRank').innerHTML = "<span style='color: #00AA00;'>" + "MOD" + "</span>";
+                                        document.getElementById('hypixelRank').innerHTML += "
+			<span style='color: #00AA00;'>" + "MOD" + "</span>";
                                     }
                                     else if (player.servers.hypixel.newPackageRank == "SLOTH")
                                     {
-                                        document.getElementById('hypixelRank').innerHTML = "<span style='color: #FF5555;'>" + "SLOTH" + "</span>";
+                                        document.getElementById('hypixelRank').innerHTML += "
+			<span style='color: #FF5555;'>" + "SLOTH" + "</span>";
                                     }
                                     else if (player.servers.hypixel.newPackageRank == "MCPROHOSTING")
                                     {
-                                        document.getElementById('hypixelRank').innerHTML = "<span style='color: #FF5555;'>" + "MCPROHOSTING" + "</span>";
+                                        document.getElementById('hypixelRank').innerHTML += "
+			<span style='color: #FF5555;'>" + "MCPROHOSTING" + "</span>";
                                     }
                                     else if (player.servers.hypixel.newPackageRank == "ADMIN")
                                     {
-                                        document.getElementById('hypixelRank').innerHTML = "<span style='color: #FF5555;'>" + "ADMIN" + "</span>";
+                                        document.getElementById('hypixelRank').innerHTML += "
+			<span style='color: #FF5555;'>" + "ADMIN" + "</span>";
                                     }
                                     else if (player.servers.hypixel.newPackageRank == "OWNER")
                                     {
-                                        document.getElementById('hypixelRank').innerHTML = "<span style='color: #FF5555;'>" + "OWNER" + "</span>";
+                                        document.getElementById('hypixelRank').innerHTML += "
+			<span style='color: #FF5555;'>" + "OWNER" + "</span>";
                                     }
                                     else {
-                                        document.getElementById('hypixelRank').innerHTML = "<span style='color: #FFFFFF;'>" + "None" + "</span>";
+                                        document.getElementById('hypixelRank').innerHTML += "
+			<span style='color: #FFFFFF;'>" + "None" + "</span>";
                                     }
                                 }
                             }
                             else {
-                                document.getElementById('hypixelRank').innerHTML = "No data found";
+                                document.getElementById('hypixelRank').innerHTML += "No data found";
                             }
          document.getElementById("title").innerHTML = player.username;
          document.getElementById("uuid").innerHTML = `UUID: ${player.uuid}`;
@@ -163,18 +186,22 @@ var name = "Seeped"; //Username Here
          document.getElementById("namehistory").innerHTML = `Original Name: ${player.name_history[0].name}`;
          }
          jsmc(name);
-      </script>
-      <title>Usage Example</title>
-   </head>
-   <body>
-      <h1 id="title"></h1>
-      <span id="uuid"></span><br>
-      <span id="type"></span><br>
-      <span id="namehistory"></span><br>
-      <br><span id="text"></span>
-      <div id="hypixelRank"></div>
-      <img id="img" src="">
-   </body>
-</html>
-
+      
+		</script>
+		<title>Usage Example</title>
+	</head>
+	<body>
+		<h1 id="title"></h1>
+		<span id="uuid"></span>
+		<br>
+			<span id="type"></span>
+			<br>
+				<span id="namehistory"></span>
+				<br>
+					<br>
+						<div id="hypixelRank"></div>
+						<br>
+							<img id="img" src="">
+							</body>
+						</html>
 ```
