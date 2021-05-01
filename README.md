@@ -2,7 +2,7 @@
 
 ## Installation
 ```html 
-<script src="https://withdrew.github.io/jsmc/jsmc@v1.1.min.js"></script>
+<script src="https://withdrew.github.io/jsmc/jsmc@v1.2.min.js"></script>
 <script>
   var name = "Seeped"; //Username Here
 function code() {
@@ -29,6 +29,7 @@ player.uuid; //returns the players uuid with dashes. Ex. eb74d592-71f8-4b1e-a1b1
 player.id; //returns the players uuid without dashes. Ex. eb74d59271f84b1ea1b1ba76a12d8858
 player.name_history; //returns the players name history.
 player.status; //returns the status of the name. The response can be taken, available, blocked, or invalid.
+player.type; //returns the account type of the player. The response can be mojang, msa, legacy, or nonexistent.
 player.skin; //returns an image of the players skin. Ex. https://crafatar.com/skins/eb74d59271f84b1ea1b1ba76a12d8858
 player.cosmetics.cape.official; //returns a image of the players official cape. Ex. https://crafatar.com/capes/403e6cb7a6ca440a80417fb1e579b5a5
 player.cosmetics.cape.optifine; //returns a image of the players optifine cape. Ex. https://api.gapple.pw/cors/optifine/Seeped
