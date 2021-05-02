@@ -26,6 +26,7 @@ https://api.hypixel.net/
 ## Usage
 
 ```javascript
+//PLAYER INFO
 player.username; //returns the players username. Ex. Seeped
 player.uuid; //returns the players uuid with dashes. Ex. eb74d592-71f8-4b1e-a1b1-ba76a12d8858
 player.id; //returns the players uuid without dashes. Ex. eb74d59271f84b1ea1b1ba76a12d8858
@@ -33,30 +34,124 @@ player.name_history; //returns the players name history.
 player.status; //returns the status of the name. The response can be taken, available, blocked, or invalid.
 player.type; //returns the account type of the player. The response can be mojang, msa, legacy, or nonexistent.
 player.skin; //returns an image of the players skin. Ex. https://crafatar.com/skins/eb74d59271f84b1ea1b1ba76a12d8858
+
+//PLAYER COSMETICS
+
+//capes
 player.cosmetics.cape.official; //returns a image of the players official cape. Ex. https://crafatar.com/capes/403e6cb7a6ca440a80417fb1e579b5a5
 player.cosmetics.cape.optifine; //returns a image of the players optifine cape. Ex. https://api.gapple.pw/cors/optifine/Seeped
 player.cosmetics.cape.labymod; //returns a image of the players laby mod cape. Ex. https://api.gapple.pw/cors/labymod/cape/6a836b80-2488-4703-85a7-f130b2097ee0
+
+//bandanas
 player.cosmetics.bandana.labymod; //returns a image of the players laby mod bandana. Ex. https://api.gapple.pw/cors/labymod/bandana/65ec6b8e4d44439eaf64fe3b572f9b8b
+
+//HYPIXEL
 player.servers.hypixel.success; //returns true or false depending if getting the player data was successful.
+
+//HYPIXEL RANKS
 player.servers.hypixel.rank; //returns the players hypixel rank. Ex. YOUTUBER
 player.servers.hypixel.newPackageRank; //returns the players new hypixel rank. Ex. VIP_PLUS
 player.servers.hypixel.monthlyPackageRank; //returns the players monthly hypixel rank. Ex. SUPERSTAR (SUPERSTAR is MVP++)
+
+//HYPIXEL PLAYER INFO
 player.servers.hypixel.online; //returns true or false depending on if the player is online or offline.
-player.servers.hypixel.firstLogin;  //returns the players first login on hypixel.
-player.servers.hypixel.lastLogin; //returns the players last login on hypixel.
-player.servers.hypixel.lastLogout; //returns the players last logout on hypixel.
+player.servers.hypixel.firstLogin;  //returns the players first login on hypixel. (IN UNIX TIME)
+player.servers.hypixel.lastLogin; //returns the players last login on hypixel. (IN UNIX TIME)
+player.servers.hypixel.lastLogout; //returns the players last logout on hypixel. (IN UNIX TIME)
 player.servers.hypixel.networkExp; //returns the players hypixel network experience.
 player.servers.hypixel.networkLevel; //returns the players hypixel network level.
 player.servers.hypixel.karma; //returns the players hypixel karma.
+
+//HYPIXEL SKYWARS
+player.servers.hypixel.skywars.games_played; //returns the amount of SkyWars games the player has played.
+player.servers.hypixel.skywars.exp; //returns the amount of SkyWars Exp the player has.
+player.servers.hypixel.skywars.level; //returns the players current Hypixel SkyWars Level.
+player.servers.hypixel.skywars.levelFormatted; //returns and formatted version of the players Hypixel SkyWars Level. Ex. §223✦
+player.servers.hypixel.skywars.win_streak; //returns the players current win streak.
+player.servers.hypixel.skywars.wins; //returns how many times the player has won in hypixel skywars.
+player.servers.hypixel.skywars.losses; //returns how many times the player has loss in hypixel skywars.
+player.servers.hypixel.skywars.kills; //returns how many kills the player currently has in hypixel skywars.
+player.servers.hypixel.skywars.deaths; //returns how many deaths the player currently has in hypixel skywars.
+player.servers.hypixel.skywars.assists; //returns how many assists the player currently has in hypixel skywars.
+player.servers.hypixel.skywars.kd; //returns the players kill/death ratio in hypixel skywars.
+player.servers.hypixel.skywars.wl; //returns the players win/loss ratio in hypixel skywars.
+player.servers.hypixel.skywars.coins; //returns how many coins the player has in hypixel skywars.
+player.servers.hypixel.skywars.time_played; //returns how much time the player has spent on hypixel skywars. (IN UNIX TIME)
+player.servers.hypixel.skywars.souls; //returns how souls the player has in hypixel skywars.
+player.servers.hypixel.skywars.quits; //returns how many times the player has quit hypixel skywars.
+
+//HYPIXEL SKYWARS SOLO
+player.servers.hypixel.skywars.solo.normal.wins; //returns how many times the player has won in hypixel skywars solo.
+player.servers.hypixel.skywars.solo.normal.losses; //returns how many times the player has loss in hypixel skywars solo.
+player.servers.hypixel.skywars.solo.normal.games_played; //returns the amount of Solo SkyWars games the player has played.
+player.servers.hypixel.skywars.solo.normal.kills; //returns how many kills the player currently has in hypixel skywars solo.
+player.servers.hypixel.skywars.solo.normal.deaths; //returns how many deaths the player currently has in hypixel skywars solo.
+player.servers.hypixel.skywars.solo.normal.kd; //returns the players kill/death ratio in hypixel skywars solo.
+player.servers.hypixel.skywars.solo.normal.wl; //returns the players win/loss ratio in hypixel skywars solo.
+                  
+//HYPIXEL SKYWARS SOLO NORMAL
+player.servers.hypixel.skywars.solo.normal.wins; //returns how many times the player has won in hypixel skywars solo in normals.
+player.servers.hypixel.skywars.solo.normal.losses; //returns how many times the player has loss in hypixel skywars solo in normals.
+player.servers.hypixel.skywars.solo.normal.games_played; //returns the amount of Solo SkyWars games in normals the player has played.
+player.servers.hypixel.skywars.solo.normal.kills; //returns how many kills the player currently has in hypixel skywars solo in normals.
+player.servers.hypixel.skywars.solo.normal.deaths; //returns how many deaths the player currently has in hypixel skywars solo in normals.
+player.servers.hypixel.skywars.solo.normal.kd; //returns the players kill/death ratio in hypixel skywars solo in normals.
+player.servers.hypixel.skywars.solo.normal.wl; //returns the players win/loss ratio in hypixel skywars solo in normals.
+
+//HYPIXEL SKYWARS SOLO INSANE
+player.servers.hypixel.skywars.solo.insane.wins; //returns how many times the player has won in hypixel skywars solo in insane.
+player.servers.hypixel.skywars.solo.insane.losses; //returns how many times the player has loss in hypixel skywars solo in insane.
+player.servers.hypixel.skywars.solo.insane.games_played; //returns the amount of Solo SkyWars games in insane the player has played.
+player.servers.hypixel.skywars.solo.insane.kills; //returns how many kills the player currently has in hypixel skywars solo in insane.
+player.servers.hypixel.skywars.solo.insane.deaths; //returns how many deaths the player currently has in hypixel skywars solo in insane.
+player.servers.hypixel.skywars.solo.insane.kd; //returns the players kill/death ratio in hypixel skywars solo in insane.
+player.servers.hypixel.skywars.solo.insane.wl; //returns the players win/loss ratio in hypixel skywars solo in insane.
+
+//HYPIXEL SKYWARS DOUBLES
+player.servers.hypixel.skywars.doubles.normal.wins; //returns how many times the player has won in hypixel skywars doubles.
+player.servers.hypixel.skywars.doubles.normal.losses; //returns how many times the player has loss in hypixel skywars doubles.
+player.servers.hypixel.skywars.doubles.normal.games_played; //returns the amount of Doubles SkyWars games the player has played.
+player.servers.hypixel.skywars.doubles.normal.kills; //returns how many kills the player currently has in hypixel skywars doubles.
+player.servers.hypixel.skywars.doubles.normal.deaths; //returns how many deaths the player currently has in hypixel skywars doubles.
+player.servers.hypixel.skywars.doubles.normal.kd; //returns the players kill/death ratio in hypixel skywars doubles.
+player.servers.hypixel.skywars.doubles.normal.wl; //returns the players win/loss ratio in hypixel skywars doubles.
+                  
+//HYPIXEL SKYWARS DOUBLES NORMAL
+player.servers.hypixel.skywars.doubles.normal.wins; //returns how many times the player has won in hypixel skywars doubles in normal.
+player.servers.hypixel.skywars.doubles.normal.losses; //returns the amount of Solo SkyWars games in insane the player has played.
+player.servers.hypixel.skywars.doubles.normal.games_played; //returns the amount of Doubles SkyWars games in normals the player has played.
+player.servers.hypixel.skywars.doubles.normal.kills; //returns how many kills the player currently has in hypixel skywars doubles in normals.
+player.servers.hypixel.skywars.doubles.normal.deaths; //returns how many deaths the player currently has in hypixel skywars doubles in normals.
+player.servers.hypixel.skywars.doubles.normal.kd; //returns the players kill/death ratio in hypixel skywars doubles in normals.
+player.servers.hypixel.skywars.doubles.normal.wl; //returns the players win/loss ratio in hypixel skywars doubles in normals.
+
+//HYPIXEL SKYWARS DOUBLES INSANE
+player.servers.hypixel.skywars.doubles.insane.wins; //returns how many times the player has won in hypixel skywars doubles in insane.
+player.servers.hypixel.skywars.doubles.insane.losses; //returns how many times the player has loss in hypixel skywars doubles in insane.
+player.servers.hypixel.skywars.doubles.insane.games_played; //returns the amount of Doubles SkyWars games in insane the player has played.
+player.servers.hypixel.skywars.doubles.insane.kills; //returns how many kills the player currently has in hypixel skywars doubles in insane.
+player.servers.hypixel.skywars.doubles.insane.deaths; //returns how many deaths the player currently has in hypixel skywars doubles in insane.
+player.servers.hypixel.skywars.doubles.insane.kd; //returns the players kill/death ratio in hypixel skywars doubles in insane.
+player.servers.hypixel.skywars.doubles.insane.wl; //returns the players win/loss ratio in hypixel skywars doubles in insane.
+
+//HYPIXEL GUILDS
 player.servers.hypixel.guild.name; //returns the guild name of the guild the player is currently in.
 player.servers.hypixel.guild.createdAt; //returns the creation date of the guild that the player is in.
 player.servers.hypixel.guild.members; //returns the members of the guild the player is currently in.
 player.servers.hypixel.guild.coins; //returns the amount of coins the guild that the player is in currently has
 player.servers.hypixel.guild.coinsEver; //returns the amount of coins the guild that the player is in has ever had
 player.servers.hypixel.guild.success;  //returns true or false depending if getting the guild data was successful.
+
+//HYPIXEL FRIENDS
+player.servers.hypixel.friends.uuid //returns an array of the friends uuids from newest to oldest.
+player.servers.hypixel.friends.uuid //returns an array of timestamps of when they became friends from newest to oldest. (IN UNIX TIME)
+
+//MINECRAFT RENDERS
 player.icon; //returns an image of the players head. Ex. https://crafatar.com/avatars/eb74d59271f84b1ea1b1ba76a12d8858?overlay
 player.avatar; //returns a render of the players avatar. Ex. https://crafatar.com/renders/body/eb74d59271f84b1ea1b1ba76a12d8858?overlay
 player.head; //returns a render of the players head. Ex. https://crafatar.com/renders/head/eb74d59271f84b1ea1b1ba76a12d8858?overlay
+
+//SYSTEM
 player.error; //returns if there is a error or not. The response can either be true or false.
 ```
 
