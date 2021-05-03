@@ -169,7 +169,7 @@ player.error; //returns if there is a error or not. The response can either be t
 <html>
    <head>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-      <script src="https://withdrew.github.io/jsmc/jsmc@v1.5.min.js"></script>
+      <script src="https://withdrew.github.io/jsmc/jsmc@v1.6.min.js"></script>
       <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
       <link href="https://unpkg.com/purecss@2.0.5/build/pure-min.css" rel="stylesheet">
       <script>
@@ -274,7 +274,7 @@ player.error; //returns if there is a error or not. The response can either be t
                   document.getElementById("title").innerHTML = player.username;
                   document.getElementById("uuid").innerHTML = `UUID: ${player.id}`;
                   document.getElementById("type").innerHTML = `Account Type: ${type}`;
-                  document.getElementById("img").src = player.avatar;
+                  document.getElementById("img").src = player.renders.avatar_1;
                   document.getElementById("namehistory").innerHTML = `Original Name: ${player.name_history[0].name}`;
                  if (player.servers.hypixel.online == true) {
          var status = "Online";
