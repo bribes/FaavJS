@@ -115,6 +115,7 @@
          }
                   document.getElementById("status").innerHTML = `Hypixel Player Status: ${status}`;
          document.getElementById("level").innerHTML = `Hypixel Level: ${player.servers.hypixel.networkLevel}`
+         document.getElementById("skylevel").innerHTML = `Hypixel Level: ${player.servers.hypixel.skywars.level}`
                   }
                   jsmc(name);
                
@@ -127,6 +128,7 @@
          <span id="uuid"></span><br>
          <span id="type"></span><br>
          <span id="level"></span><br>
+         <span id="skylevel"></span><br>
          <span id="status"></span><br>
          <div id="hypixelRank"></div>
          <span id="namehistory"></span><br>
