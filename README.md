@@ -2,7 +2,7 @@
 
 ## Installation
 ```html 
-<script src="https://withdrew.github.io/jsmc/jsmc@v1.5.min.js"></script>
+<script src="https://withdrew.github.io/jsmc/jsmc@v1.6.min.js"></script>
 <script>
   var name = "Seeped"; //Username Here
 function code() {
@@ -147,9 +147,17 @@ player.servers.hypixel.friends.uuid //returns an array of the friends uuids from
 player.servers.hypixel.friends.uuid //returns an array of timestamps of when they became friends from newest to oldest. (IN UNIX TIME)
 
 //MINECRAFT RENDERS
-player.icon; //returns an image of the players head. Ex. https://crafatar.com/avatars/eb74d59271f84b1ea1b1ba76a12d8858?overlay
-player.avatar; //returns a render of the players avatar. Ex. https://crafatar.com/renders/body/eb74d59271f84b1ea1b1ba76a12d8858?overlay
-player.head; //returns a render of the players head. Ex. https://crafatar.com/renders/head/eb74d59271f84b1ea1b1ba76a12d8858?overlay
+player.renders.icon; //returns an image of the players head. Ex. https://crafatar.com/avatars/eb74d59271f84b1ea1b1ba76a12d8858?overlay
+
+player.renders.avatar_1; //returns a render of the players avatar. Ex. https://crafatar.com/renders/body/eb74d59271f84b1ea1b1ba76a12d8858?overlay
+player.renders.avatar_2; //returns a render of the players avatar. Ex. https://visage.surgeplay.com/full/eb74d59271f84b1ea1b1ba76a12d8858
+player.renders.avatar_3; //returns a render of the players avatar. Ex. https://visage.surgeplay.com/frontfull/eb74d59271f84b1ea1b1ba76a12d8858
+
+player.renders.bust_1; //returns a render of the players bust. Ex. https://visage.surgeplay.com/front/eb74d59271f84b1ea1b1ba76a12d8858
+player.renders.bust_2; //returns a render of the players bust. Ex. https://visage.surgeplay.com/bust/eb74d59271f84b1ea1b1ba76a12d8858
+
+player.renders.head_1; //returns a render of the players head. Ex. https://crafatar.com/renders/head/eb74d59271f84b1ea1b1ba76a12d8858?overlay
+player.renders.head_2; //returns a render of the players head. Ex. https://visage.surgeplay.com/head/eb74d59271f84b1ea1b1ba76a12d8858?overlay
 
 //SYSTEM
 player.error; //returns if there is a error or not. The response can either be true or false.
