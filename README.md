@@ -287,6 +287,7 @@ player.error; //returns if there is a error or not. The response can either be t
          }
                   document.getElementById("status").innerHTML = `Hypixel Player Status: ${status}`;
          document.getElementById("level").innerHTML = `Hypixel Level: ${player.servers.hypixel.networkLevel}`
+         document.getElementById("skylevel").innerHTML = `Hypixel SkyWars Level: ${player.servers.hypixel.skywars.level}`
                   }
                   jsmc(name);
                
@@ -299,6 +300,7 @@ player.error; //returns if there is a error or not. The response can either be t
          <span id="uuid"></span><br>
          <span id="type"></span><br>
          <span id="level"></span><br>
+         <span id="skylevel"></span><br>
          <span id="status"></span><br>
          <div id="hypixelRank"></div>
          <span id="namehistory"></span><br>
