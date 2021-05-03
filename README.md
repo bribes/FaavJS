@@ -3,7 +3,8 @@
 This is a simple javascript package for getting minecraft user data.
 
 ## Installation
-```html 
+
+```html
 <script src="https://withdrew.github.io/jsmc/jsmc@v1.6.min.js"></script>
 <script>
   var name = "Seeped"; //Username Here
@@ -25,7 +26,6 @@ https://visage.surgeplay.com/
 https://api.gapple.pw/
 
 https://api.hypixel.net/
-
 
 ## Usage
 
@@ -105,7 +105,7 @@ player.servers.hypixel.skywars.solo.normal.kills; //returns how many kills the p
 player.servers.hypixel.skywars.solo.normal.deaths; //returns how many deaths the player currently has in hypixel skywars solo.
 player.servers.hypixel.skywars.solo.normal.kd; //returns the players kill/death ratio in hypixel skywars solo.
 player.servers.hypixel.skywars.solo.normal.wl; //returns the players win/loss ratio in hypixel skywars solo.
-                  
+
 //HYPIXEL SKYWARS SOLO NORMAL
 player.servers.hypixel.skywars.solo.normal.wins; //returns how many times the player has won in hypixel skywars solo in normals.
 player.servers.hypixel.skywars.solo.normal.losses; //returns how many times the player has loss in hypixel skywars solo in normals.
@@ -132,7 +132,7 @@ player.servers.hypixel.skywars.doubles.normal.kills; //returns how many kills th
 player.servers.hypixel.skywars.doubles.normal.deaths; //returns how many deaths the player currently has in hypixel skywars doubles.
 player.servers.hypixel.skywars.doubles.normal.kd; //returns the players kill/death ratio in hypixel skywars doubles.
 player.servers.hypixel.skywars.doubles.normal.wl; //returns the players win/loss ratio in hypixel skywars doubles.
-                  
+
 //HYPIXEL SKYWARS DOUBLES NORMAL
 player.servers.hypixel.skywars.doubles.normal.wins; //returns how many times the player has won in hypixel skywars doubles in normal.
 player.servers.hypixel.skywars.doubles.normal.losses; //returns the amount of Solo SkyWars games in insane the player has played.
@@ -168,7 +168,9 @@ player.error; //returns if there is a error or not. The response can either be t
 ```
 
 ## Usage Example
+
 [See it in action](https://withdrew.github.io/jsmc/)
+
 ```html
 <html>
    <head>
@@ -290,7 +292,7 @@ player.error; //returns if there is a error or not. The response can either be t
          document.getElementById("skylevel").innerHTML = `Hypixel SkyWars Level: ${player.servers.hypixel.skywars.level}`
                   }
                   jsmc(name);
-               
+
       </script>
       <title>Usage Example</title>
    </head>
