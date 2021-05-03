@@ -37,14 +37,27 @@ player.status; //returns the status of the name. The response can be taken, avai
 player.type; //returns the account type of the player. The response can be mojang, msa, legacy, or nonexistent.
 player.skin; //returns an image of the players skin. Ex. https://crafatar.com/skins/eb74d59271f84b1ea1b1ba76a12d8858
 
+//MINECRAFT RENDERS
+player.renders.icon; //returns an image of the players head. Ex. https://crafatar.com/avatars/eb74d59271f84b1ea1b1ba76a12d8858?overlay
+
+player.renders.avatar_1; //returns a render of the players avatar. Ex. https://crafatar.com/renders/body/eb74d59271f84b1ea1b1ba76a12d8858?overlay
+player.renders.avatar_2; //returns a render of the players avatar. Ex. https://visage.surgeplay.com/full/eb74d59271f84b1ea1b1ba76a12d8858
+player.renders.avatar_3; //returns a render of the players avatar. Ex. https://visage.surgeplay.com/frontfull/eb74d59271f84b1ea1b1ba76a12d8858
+
+player.renders.bust_1; //returns a render of the players bust. Ex. https://visage.surgeplay.com/front/eb74d59271f84b1ea1b1ba76a12d8858
+player.renders.bust_2; //returns a render of the players bust. Ex. https://visage.surgeplay.com/bust/eb74d59271f84b1ea1b1ba76a12d8858
+
+player.renders.head_1; //returns a render of the players head. Ex. https://crafatar.com/renders/head/eb74d59271f84b1ea1b1ba76a12d8858?overlay
+player.renders.head_2; //returns a render of the players head. Ex. https://visage.surgeplay.com/head/eb74d59271f84b1ea1b1ba76a12d8858?overlay
+
 //PLAYER COSMETICS
 
-//capes
+//CAPES
 player.cosmetics.cape.official; //returns a image of the players official cape. Ex. https://crafatar.com/capes/403e6cb7a6ca440a80417fb1e579b5a5
 player.cosmetics.cape.optifine; //returns a image of the players optifine cape. Ex. https://api.gapple.pw/cors/optifine/Seeped
 player.cosmetics.cape.labymod; //returns a image of the players laby mod cape. Ex. https://api.gapple.pw/cors/labymod/cape/6a836b80-2488-4703-85a7-f130b2097ee0
 
-//bandanas
+//BANDANAS
 player.cosmetics.bandana.labymod; //returns a image of the players laby mod bandana. Ex. https://api.gapple.pw/cors/labymod/bandana/65ec6b8e4d44439eaf64fe3b572f9b8b
 
 //HYPIXEL
@@ -147,19 +160,6 @@ player.servers.hypixel.guild.success;  //returns true or false depending if gett
 //HYPIXEL FRIENDS
 player.servers.hypixel.friends.uuid //returns an array of the friends uuids from newest to oldest.
 player.servers.hypixel.friends.uuid //returns an array of timestamps of when they became friends from newest to oldest. (IN UNIX TIME)
-
-//MINECRAFT RENDERS
-player.renders.icon; //returns an image of the players head. Ex. https://crafatar.com/avatars/eb74d59271f84b1ea1b1ba76a12d8858?overlay
-
-player.renders.avatar_1; //returns a render of the players avatar. Ex. https://crafatar.com/renders/body/eb74d59271f84b1ea1b1ba76a12d8858?overlay
-player.renders.avatar_2; //returns a render of the players avatar. Ex. https://visage.surgeplay.com/full/eb74d59271f84b1ea1b1ba76a12d8858
-player.renders.avatar_3; //returns a render of the players avatar. Ex. https://visage.surgeplay.com/frontfull/eb74d59271f84b1ea1b1ba76a12d8858
-
-player.renders.bust_1; //returns a render of the players bust. Ex. https://visage.surgeplay.com/front/eb74d59271f84b1ea1b1ba76a12d8858
-player.renders.bust_2; //returns a render of the players bust. Ex. https://visage.surgeplay.com/bust/eb74d59271f84b1ea1b1ba76a12d8858
-
-player.renders.head_1; //returns a render of the players head. Ex. https://crafatar.com/renders/head/eb74d59271f84b1ea1b1ba76a12d8858?overlay
-player.renders.head_2; //returns a render of the players head. Ex. https://visage.surgeplay.com/head/eb74d59271f84b1ea1b1ba76a12d8858?overlay
 
 //SYSTEM
 player.error; //returns if there is a error or not. The response can either be true or false.
