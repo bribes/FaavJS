@@ -37,7 +37,7 @@ player.status; //returns the status of the name. The response can be taken, avai
 player.type; //returns the account type of the player. The response can be mojang, msa, legacy, or nonexistent.
 player.skin; //returns an image of the players skin. Ex. https://crafatar.com/skins/eb74d59271f84b1ea1b1ba76a12d8858
 
-//MINECRAFT RENDERS
+//PLAYER RENDERS
 player.renders.icon; //returns an image of the players head. Ex. https://crafatar.com/avatars/eb74d59271f84b1ea1b1ba76a12d8858?overlay
 
 player.renders.avatar_1; //returns a render of the players avatar. Ex. https://crafatar.com/renders/body/eb74d59271f84b1ea1b1ba76a12d8858?overlay
