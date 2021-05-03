@@ -18,6 +18,8 @@ https://playerdb.co/
 
 https://crafatar.com/
 
+https://visage.surgeplay.com/
+
 https://api.gapple.pw/
 
 https://api.hypixel.net/
