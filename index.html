@@ -8,13 +8,13 @@
          var name = "Seeped"; //Username Here
                   function code() {
                      var type = null;
-                     if (player.type == "msa") {
-                     type = "Microsoft";
-                     } else if (player.type == "mojang") {
-                     type = "Mojang";
-                     } else if (player.type == "legacy") {
-                     type = "Legacy";
-                     }
+                     if (gapple.status == "msa") {
+            type = "Microsoft";
+            } else if (gapple.status == "normal") {
+            type = "Normal (Mojang OR Microsoft)";
+            } else if (gapple.status == "legacy") {
+            type = "Legacy";
+            }
                      if (player.servers.hypixel.newPackageRank != undefined) {
                                          if (player.servers.hypixel.rank != undefined) {
                                              if (player.servers.hypixel.rank == "YOUTUBER")
