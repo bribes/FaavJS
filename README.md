@@ -109,7 +109,7 @@ player.error; //returns if there is a error or not. The response can either be t
 <html>
    <head>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-      <script src="https://withdrew.github.io/jsmc/jsmc@v1.7.min.js"></script>
+      <script src="https://withdrew.github.io/jsmc/jsmc@v1.81.min.js"></script>
       <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
       <link href="https://unpkg.com/purecss@2.0.5/build/pure-min.css" rel="stylesheet">
       <script>
@@ -117,12 +117,12 @@ player.error; //returns if there is a error or not. The response can either be t
                   function code() {
                      var type = null;
                      if (player.type == "msa") {
-                     type = "Microsoft";
-                     } else if (player.type == "mojang") {
-                     type = "Mojang";
-                     } else if (player.type == "legacy") {
-                     type = "Legacy";
-                     }
+            type = "Microsoft";
+            } else if (player.type == "normal") {
+            type = "Normal (Mojang OR Microsoft)";
+            } else if (player.type == "legacy") {
+            type = "Legacy";
+            }
                      if (player.servers.hypixel.newPackageRank != undefined) {
                                          if (player.servers.hypixel.rank != undefined) {
                                              if (player.servers.hypixel.rank == "YOUTUBER")
@@ -215,18 +215,19 @@ player.error; //returns if there is a error or not. The response can either be t
                   document.getElementById("uuid").innerHTML = `UUID: ${player.id}`;
                   document.getElementById("type").innerHTML = `Account Type: ${type}`;
                   document.getElementById("img").src = player.renders.avatar_1;
-                  document.getElementById("namehistory").innerHTML = `Original Name: ${player.name_history[0].name}`;
+                  document.getElementById("namehistory").innerHTML = `Original Name: ${player.name_history[(player.name_history.length-1)].name}`;
                  if (player.servers.hypixel.online == true) {
          var status = "Online";
          } else {
          var status = "Offline";
          }
                   document.getElementById("status").innerHTML = `Hypixel Player Status: ${status}`;
-         document.getElementById("level").innerHTML = `Hypixel Level: ${player.servers.hypixel.networkLevel}`
-         document.getElementById("skylevel").innerHTML = `Hypixel SkyWars Level: ${player.servers.hypixel.skywars.level}`
+         document.getElementById("level").innerHTML = `Hypixel Level: ${player.servers.hypixel.networkLevel}`;
+         document.getElementById("skylevel").innerHTML = `Hypixel SkyWars Level: ${player.servers.hypixel.stats.SkyWars.level}`;
+         document.getElementById("bedlevel").innerHTML = `Hypixel Bedwars Level: ${player.servers.hypixel.stats.Bedwars.level}`;
                   }
                   jsmc(name);
-
+               
       </script>
       <title>Usage Example</title>
    </head>
@@ -237,6 +238,7 @@ player.error; //returns if there is a error or not. The response can either be t
          <span id="type"></span><br>
          <span id="level"></span><br>
          <span id="skylevel"></span><br>
+         <span id="bedlevel"></span><br>
          <span id="status"></span><br>
          <div id="hypixelRank"></div>
          <span id="namehistory"></span><br>
