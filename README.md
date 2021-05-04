@@ -46,16 +46,16 @@ player.type; //returns the account type of the player. The response can be norma
 player.skin; //returns an image of the players skin. Ex. https://crafatar.com/skins/eb74d59271f84b1ea1b1ba76a12d8858
 
 //PLAYER RENDERS
-player.renders.icon; //returns an image of the players head. Ex. https://crafatar.com/avatars/eb74d59271f84b1ea1b1ba76a12d8858?overlay
+player.renders.icon; //returns an image of the players head. Ex. https://mc-heads.net/avatar/eb74d592-71f8-4b1e-a1b1-ba76a12d8858
 
-player.renders.avatar_1; //returns a render of the players avatar. Ex. https://crafatar.com/renders/body/eb74d59271f84b1ea1b1ba76a12d8858?overlay
+player.renders.avatar_1; //returns a render of the players avatar. Ex. https://mc-heads.net/body/eb74d592-71f8-4b1e-a1b1-ba76a12d8858
 player.renders.avatar_2; //returns a render of the players avatar. Ex. https://visage.surgeplay.com/full/eb74d59271f84b1ea1b1ba76a12d8858
-player.renders.avatar_3; //returns a render of the players avatar. Ex. https://visage.surgeplay.com/frontfull/eb74d59271f84b1ea1b1ba76a12d8858
+player.renders.avatar_3; //returns a render of the players avatar. Ex. https://mc-heads.net/player/eb74d592-71f8-4b1e-a1b1-ba76a12d8858
 
 player.renders.bust_1; //returns a render of the players bust. Ex. https://visage.surgeplay.com/front/eb74d59271f84b1ea1b1ba76a12d8858
 player.renders.bust_2; //returns a render of the players bust. Ex. https://visage.surgeplay.com/bust/eb74d59271f84b1ea1b1ba76a12d8858
 
-player.renders.head_1; //returns a render of the players head. Ex. https://crafatar.com/renders/head/eb74d59271f84b1ea1b1ba76a12d8858?overlay
+player.renders.head_1; //returns a render of the players head. Ex. https://mc-heads.net/head/eb74d592-71f8-4b1e-a1b1-ba76a12d8858
 player.renders.head_2; //returns a render of the players head. Ex. https://visage.surgeplay.com/head/eb74d59271f84b1ea1b1ba76a12d8858?overlay
 
 //PLAYER COSMETICS
