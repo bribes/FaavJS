@@ -1,5 +1,11 @@
 # JSMC
 
+# MAJOR BUG FOUND IN v1.6 PLEASE UPDATE TO v1.7
+
+## Changelog
+
+- remove skywars stats due to a severe bug.
+
 This is a simple javascript package for getting minecraft user data.
 
 ## Installation
