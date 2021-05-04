@@ -253,6 +253,11 @@ player.error; //returns if there is a error or not. The response can either be t
          <div id="hypixelRank"></div>
          <span id="namehistory"></span><br>
          <img id="img" width="120" height="288">
+         <style>
+            img {
+            border: none;
+            }
+         </style>
       </body>
    </center>
 </html>
