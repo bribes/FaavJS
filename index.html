@@ -107,7 +107,7 @@
                   document.getElementById("uuid").innerHTML = `UUID: ${player.id}`;
                   document.getElementById("type").innerHTML = `Account Type: ${type}`;
                   document.getElementById("img").src = player.renders.avatar_1;
-                  document.getElementById("namehistory").innerHTML = `Original Name: ${player.name_history[0].name}`;
+                  document.getElementById("namehistory").innerHTML = `Original Name: ${player.name_history[player.name_history.length].name}`;
                  if (player.servers.hypixel.online == true) {
          var status = "Online";
          } else {
