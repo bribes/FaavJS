@@ -1,4 +1,4 @@
-# JSMC
+# FaavJS
 
 ## Changelog
 
