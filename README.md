@@ -2,14 +2,14 @@
 
 ## Changelog
 
-- pluralized cape and bandana.
+- started using https://mc-heads.net/.
 
 This is a simple javascript package for getting minecraft user data.
 
 ## Installation
 
 ```html
-<script src="https://withdrew.github.io/jsmc/jsmc@v1.81.min.js"></script>
+<script src="https://withdrew.github.io/jsmc/jsmc@v1.9.min.js"></script>
 <script>
   var name = "Seeped"; //Username Here
 function code() {
@@ -28,6 +28,8 @@ https://crafatar.com/
 https://visage.surgeplay.com/
 
 https://api.gapple.pw/
+
+https://mc-heads.net/
 
 https://api.hypixel.net/
 
