@@ -2,7 +2,7 @@
 
 ## Changelog
 
-- added player.servers.hypixel.stats
+- pluralized cape and bandana.
 
 This is a simple javascript package for getting minecraft user data.
 
@@ -59,12 +59,12 @@ player.renders.head_2; //returns a render of the players head. Ex. https://visag
 //PLAYER COSMETICS
 
 //CAPES
-player.cosmetics.cape.official; //returns a image of the players official cape. Ex. https://crafatar.com/capes/403e6cb7a6ca440a80417fb1e579b5a5
-player.cosmetics.cape.optifine; //returns a image of the players optifine cape. Ex. https://api.gapple.pw/cors/optifine/Seeped
-player.cosmetics.cape.labymod; //returns a image of the players laby mod cape. Ex. https://api.gapple.pw/cors/labymod/cape/6a836b80-2488-4703-85a7-f130b2097ee0
+player.cosmetics.capes.official; //returns a image of the players official cape. Ex. https://crafatar.com/capes/403e6cb7a6ca440a80417fb1e579b5a5
+player.cosmetics.capes.optifine; //returns a image of the players optifine cape. Ex. https://api.gapple.pw/cors/optifine/Seeped
+player.cosmetics.capes.labymod; //returns a image of the players laby mod cape. Ex. https://api.gapple.pw/cors/labymod/cape/6a836b80-2488-4703-85a7-f130b2097ee0
 
 //BANDANAS
-player.cosmetics.bandana.labymod; //returns a image of the players laby mod bandana. Ex. https://api.gapple.pw/cors/labymod/bandana/65ec6b8e4d44439eaf64fe3b572f9b8b
+player.cosmetics.bandanas.labymod; //returns a image of the players laby mod bandana. Ex. https://api.gapple.pw/cors/labymod/bandana/65ec6b8e4d44439eaf64fe3b572f9b8b
 
 //HYPIXEL
 player.servers.hypixel.success; //returns true or false depending if getting the player data was successful.
