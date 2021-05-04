@@ -2,7 +2,7 @@
 
 ## Changelog
 
-- added player.stats.
+- added player.servers.hypixel.stats
 
 This is a simple javascript package for getting minecraft user data.
 
