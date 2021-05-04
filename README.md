@@ -9,7 +9,7 @@ This is a simple javascript package for getting minecraft user data.
 ## Installation
 
 ```html
-<script src="https://withdrew.github.io/jsmc/jsmc@v1.9.min.js"></script>
+<script src="https://withdrew.github.io/jsmc/jsmc@v1.91.min.js"></script>
 <script>
   var name = "Seeped"; //Username Here
 function code() {
@@ -111,7 +111,7 @@ player.error; //returns if there is a error or not. The response can either be t
 <html>
    <head>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-      <script src="https://withdrew.github.io/jsmc/jsmc@v1.81.min.js"></script>
+      <script src="https://withdrew.github.io/jsmc/jsmc@v1.91.min.js"></script>
       <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
       <link href="https://unpkg.com/purecss@2.0.5/build/pure-min.css" rel="stylesheet">
       <script>
@@ -244,7 +244,7 @@ player.error; //returns if there is a error or not. The response can either be t
          <span id="status"></span><br>
          <div id="hypixelRank"></div>
          <span id="namehistory"></span><br>
-         <img id="img" src="">
+         <img id="img" width="120" height="288">
       </body>
    </center>
 </html>
