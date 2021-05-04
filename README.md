@@ -2,7 +2,7 @@
 
 ## Changelog
 
-- started using https://mc-heads.net/.
+- added checks to make sure if a person played hypixel but didnt play any games JSMC wouldn't bug out.
 
 This is a simple javascript package for getting minecraft user data.
 
