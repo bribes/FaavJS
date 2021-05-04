@@ -111,11 +111,11 @@ player.error; //returns if there is a error or not. The response can either be t
 <html>
    <head>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-      <script src="https://withdrew.github.io/jsmc/jsmc@v1.92.min.js"></script>
+      <script src="https://withdrew.github.io/jsmc/jsmc@v1.93.min.js"></script>
       <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-      <link href="https://unpkg.com/purecss@2.0.5/build/pure-min.css" rel="stylesheet">
+      <link href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" rel="stylesheet">
       <script>
-         var name = "Seeped"; //Username Here
+         var name = "CoderTim"; //Username Here
                   function code() {
                      var type = null;
                      if (player.type == "msa") {
@@ -125,20 +125,20 @@ player.error; //returns if there is a error or not. The response can either be t
             } else if (player.type == "legacy") {
             type = "Legacy";
             }
-                     if (player.servers.hypixel.newPackageRank != undefined) {
-                                         if (player.servers.hypixel.rank != undefined) {
+         document.getElementById("hypixelRank").innerHTML += "Hypixel Rank: ";
+                     if (player.servers.hypixel.newPackageRank !== undefined) {
+                                         if (player.servers.hypixel.rank !== undefined) {
                                              if (player.servers.hypixel.rank == "YOUTUBER")
                                              {
-                                                document.getElementById("hypixelRank").innerHTML += "Hypixel Rank: ";
                                                  document.getElementById('hypixelRank').innerHTML += "<span style='color: #AA0000;'>" + "YOU" + "</span>" + "<span style='color: #FFFFFF;'>" + "TUBER" + "</span>";
                                              }
                                              else {
-                                                document.getElementById("hypixelRank").innerHTML += "Hypixel Rank: ";
+                                                
                                                  document.getElementById('hypixelRank').innerHTML += "<span style='color: #FFAA00;'>" + player.servers.hypixel.rank + "</span>";
                                              }
                                          }
                                          else {
-                                            document.getElementById("hypixelRank").innerHTML += "Hypixel Rank: ";
+                                            
                                              if (player.servers.hypixel.newPackageRank == "VIP")
                                              {
                                                  document.getElementById('hypixelRank').innerHTML += "<span style='color: #55FF55;'>" + "VIP" + "</span>";
@@ -211,7 +211,7 @@ player.error; //returns if there is a error or not. The response can either be t
                                          }
                                      }
                                      else {
-                                         document.getElementById('hypixelRank').innerHTML += "No data found";
+                                         document.getElementById('hypixelRank').innerHTML += "None";
                                      }
                   document.getElementById("title").innerHTML = player.username;
                   document.getElementById("uuid").innerHTML = `UUID: ${player.id}`;
@@ -225,8 +225,16 @@ player.error; //returns if there is a error or not. The response can either be t
          }
                   document.getElementById("status").innerHTML = `Hypixel Player Status: ${status}`;
          document.getElementById("level").innerHTML = `Hypixel Level: ${player.servers.hypixel.networkLevel}`;
+         if (player.servers.hypixel.stats.SkyWars !== undefined) {
          document.getElementById("skylevel").innerHTML = `Hypixel SkyWars Level: ${player.servers.hypixel.stats.SkyWars.level}`;
+         } else {
+         document.getElementById("sky").remove();
+         }
+         if (player.servers.hypixel.stats.Bedwars !== undefined) {
          document.getElementById("bedlevel").innerHTML = `Hypixel Bedwars Level: ${player.servers.hypixel.stats.Bedwars.level}`;
+         } else {
+         document.getElementById("bed").remove();
+         }
                   }
                   jsmc(name);
                
@@ -239,8 +247,8 @@ player.error; //returns if there is a error or not. The response can either be t
          <span id="uuid"></span><br>
          <span id="type"></span><br>
          <span id="level"></span><br>
-         <span id="skylevel"></span><br>
-         <span id="bedlevel"></span><br>
+         <span id="skylevel"></span><br id="sky">
+         <span id="bedlevel"></span><br id="bed">
          <span id="status"></span><br>
          <div id="hypixelRank"></div>
          <span id="namehistory"></span><br>
