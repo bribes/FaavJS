@@ -2,7 +2,7 @@
 
 ## Changelog
 
-- added checks to make sure if a person played hypixel but didnt play any games FaavJS wouldn't bug out.
+- rebranded to FaavJS.
 
 This is a simple javascript package for getting minecraft user data.
 
@@ -85,7 +85,7 @@ player.servers.hypixel.networkExp; //returns the players hypixel network experie
 player.servers.hypixel.networkLevel; //returns the players hypixel network level.
 player.servers.hypixel.karma; //returns the players hypixel karma.
 
-//im way to lazy to document all the hypixel stats so to see them all go to the website you're hosting jsmc on and do player.servers.hypixel.stats in the inspect element console. Keep in mind that the player.servers.hypixel.stats thing is taken from the hypixel api.
+//im way to lazy to document all the hypixel stats so to see them all go to the website you're hosting FaavJS on and do player.servers.hypixel.stats in the inspect element console. Keep in mind that the player.servers.hypixel.stats thing is taken from the hypixel api.
 
 //HYPIXEL GUILDS
 player.servers.hypixel.guild.name; //returns the guild name of the guild the player is currently in.
@@ -105,7 +105,7 @@ player.error; //returns if there is a error or not. The response can either be t
 
 ## Usage Example
 
-[See it in action](https://withdrew.github.io/jsmc/)
+[See it in action](https://withdrew.github.io/FaavJS/)
 
 ```html
 <html>
