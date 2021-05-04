@@ -11,7 +11,7 @@ This is a simple javascript package for getting minecraft user data.
 ## Installation
 
 ```html
-<script src="https://withdrew.github.io/jsmc/jsmc@v1.6.min.js"></script>
+<script src="https://withdrew.github.io/jsmc/jsmc@v1.7.min.js"></script>
 <script>
   var name = "Seeped"; //Username Here
 function code() {
