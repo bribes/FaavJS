@@ -85,78 +85,6 @@ player.servers.hypixel.networkExp; //returns the players hypixel network experie
 player.servers.hypixel.networkLevel; //returns the players hypixel network level.
 player.servers.hypixel.karma; //returns the players hypixel karma.
 
-//HYPIXEL SKYWARS
-player.servers.hypixel.skywars.games_played; //returns the amount of SkyWars games the player has played.
-player.servers.hypixel.skywars.exp; //returns the amount of SkyWars Exp the player has.
-player.servers.hypixel.skywars.level; //returns the players current Hypixel SkyWars Level.
-player.servers.hypixel.skywars.levelFormatted; //returns and formatted version of the players Hypixel SkyWars Level. Ex. §223✦
-player.servers.hypixel.skywars.win_streak; //returns the players current win streak.
-player.servers.hypixel.skywars.wins; //returns how many times the player has won in hypixel skywars.
-player.servers.hypixel.skywars.losses; //returns how many times the player has loss in hypixel skywars.
-player.servers.hypixel.skywars.kills; //returns how many kills the player currently has in hypixel skywars.
-player.servers.hypixel.skywars.deaths; //returns how many deaths the player currently has in hypixel skywars.
-player.servers.hypixel.skywars.assists; //returns how many assists the player currently has in hypixel skywars.
-player.servers.hypixel.skywars.kd; //returns the players kill/death ratio in hypixel skywars.
-player.servers.hypixel.skywars.wl; //returns the players win/loss ratio in hypixel skywars.
-player.servers.hypixel.skywars.coins; //returns how many coins the player has in hypixel skywars.
-player.servers.hypixel.skywars.time_played; //returns how much time the player has spent on hypixel skywars. (IN UNIX TIME)
-player.servers.hypixel.skywars.souls; //returns how souls the player has in hypixel skywars.
-player.servers.hypixel.skywars.quits; //returns how many times the player has quit hypixel skywars.
-
-//HYPIXEL SKYWARS SOLO
-player.servers.hypixel.skywars.solo.normal.wins; //returns how many times the player has won in hypixel skywars solo.
-player.servers.hypixel.skywars.solo.normal.losses; //returns how many times the player has loss in hypixel skywars solo.
-player.servers.hypixel.skywars.solo.normal.games_played; //returns the amount of Solo SkyWars games the player has played.
-player.servers.hypixel.skywars.solo.normal.kills; //returns how many kills the player currently has in hypixel skywars solo.
-player.servers.hypixel.skywars.solo.normal.deaths; //returns how many deaths the player currently has in hypixel skywars solo.
-player.servers.hypixel.skywars.solo.normal.kd; //returns the players kill/death ratio in hypixel skywars solo.
-player.servers.hypixel.skywars.solo.normal.wl; //returns the players win/loss ratio in hypixel skywars solo.
-
-//HYPIXEL SKYWARS SOLO NORMAL
-player.servers.hypixel.skywars.solo.normal.wins; //returns how many times the player has won in hypixel skywars solo in normals.
-player.servers.hypixel.skywars.solo.normal.losses; //returns how many times the player has loss in hypixel skywars solo in normals.
-player.servers.hypixel.skywars.solo.normal.games_played; //returns the amount of Solo SkyWars games in normals the player has played.
-player.servers.hypixel.skywars.solo.normal.kills; //returns how many kills the player currently has in hypixel skywars solo in normals.
-player.servers.hypixel.skywars.solo.normal.deaths; //returns how many deaths the player currently has in hypixel skywars solo in normals.
-player.servers.hypixel.skywars.solo.normal.kd; //returns the players kill/death ratio in hypixel skywars solo in normals.
-player.servers.hypixel.skywars.solo.normal.wl; //returns the players win/loss ratio in hypixel skywars solo in normals.
-
-//HYPIXEL SKYWARS SOLO INSANE
-player.servers.hypixel.skywars.solo.insane.wins; //returns how many times the player has won in hypixel skywars solo in insane.
-player.servers.hypixel.skywars.solo.insane.losses; //returns how many times the player has loss in hypixel skywars solo in insane.
-player.servers.hypixel.skywars.solo.insane.games_played; //returns the amount of Solo SkyWars games in insane the player has played.
-player.servers.hypixel.skywars.solo.insane.kills; //returns how many kills the player currently has in hypixel skywars solo in insane.
-player.servers.hypixel.skywars.solo.insane.deaths; //returns how many deaths the player currently has in hypixel skywars solo in insane.
-player.servers.hypixel.skywars.solo.insane.kd; //returns the players kill/death ratio in hypixel skywars solo in insane.
-player.servers.hypixel.skywars.solo.insane.wl; //returns the players win/loss ratio in hypixel skywars solo in insane.
-
-//HYPIXEL SKYWARS DOUBLES
-player.servers.hypixel.skywars.doubles.normal.wins; //returns how many times the player has won in hypixel skywars doubles.
-player.servers.hypixel.skywars.doubles.normal.losses; //returns how many times the player has loss in hypixel skywars doubles.
-player.servers.hypixel.skywars.doubles.normal.games_played; //returns the amount of Doubles SkyWars games the player has played.
-player.servers.hypixel.skywars.doubles.normal.kills; //returns how many kills the player currently has in hypixel skywars doubles.
-player.servers.hypixel.skywars.doubles.normal.deaths; //returns how many deaths the player currently has in hypixel skywars doubles.
-player.servers.hypixel.skywars.doubles.normal.kd; //returns the players kill/death ratio in hypixel skywars doubles.
-player.servers.hypixel.skywars.doubles.normal.wl; //returns the players win/loss ratio in hypixel skywars doubles.
-
-//HYPIXEL SKYWARS DOUBLES NORMAL
-player.servers.hypixel.skywars.doubles.normal.wins; //returns how many times the player has won in hypixel skywars doubles in normal.
-player.servers.hypixel.skywars.doubles.normal.losses; //returns the amount of Solo SkyWars games in insane the player has played.
-player.servers.hypixel.skywars.doubles.normal.games_played; //returns the amount of Doubles SkyWars games in normals the player has played.
-player.servers.hypixel.skywars.doubles.normal.kills; //returns how many kills the player currently has in hypixel skywars doubles in normals.
-player.servers.hypixel.skywars.doubles.normal.deaths; //returns how many deaths the player currently has in hypixel skywars doubles in normals.
-player.servers.hypixel.skywars.doubles.normal.kd; //returns the players kill/death ratio in hypixel skywars doubles in normals.
-player.servers.hypixel.skywars.doubles.normal.wl; //returns the players win/loss ratio in hypixel skywars doubles in normals.
-
-//HYPIXEL SKYWARS DOUBLES INSANE
-player.servers.hypixel.skywars.doubles.insane.wins; //returns how many times the player has won in hypixel skywars doubles in insane.
-player.servers.hypixel.skywars.doubles.insane.losses; //returns how many times the player has loss in hypixel skywars doubles in insane.
-player.servers.hypixel.skywars.doubles.insane.games_played; //returns the amount of Doubles SkyWars games in insane the player has played.
-player.servers.hypixel.skywars.doubles.insane.kills; //returns how many kills the player currently has in hypixel skywars doubles in insane.
-player.servers.hypixel.skywars.doubles.insane.deaths; //returns how many deaths the player currently has in hypixel skywars doubles in insane.
-player.servers.hypixel.skywars.doubles.insane.kd; //returns the players kill/death ratio in hypixel skywars doubles in insane.
-player.servers.hypixel.skywars.doubles.insane.wl; //returns the players win/loss ratio in hypixel skywars doubles in insane.
-
 //HYPIXEL GUILDS
 player.servers.hypixel.guild.name; //returns the guild name of the guild the player is currently in.
 player.servers.hypixel.guild.createdAt; //returns the creation date of the guild that the player is in.
@@ -181,7 +109,7 @@ player.error; //returns if there is a error or not. The response can either be t
 <html>
    <head>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-      <script src="https://withdrew.github.io/jsmc/jsmc@v1.6.min.js"></script>
+      <script src="https://withdrew.github.io/jsmc/jsmc@v1.7.min.js"></script>
       <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
       <link href="https://unpkg.com/purecss@2.0.5/build/pure-min.css" rel="stylesheet">
       <script>
