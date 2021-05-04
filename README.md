@@ -83,6 +83,8 @@ player.servers.hypixel.networkExp; //returns the players hypixel network experie
 player.servers.hypixel.networkLevel; //returns the players hypixel network level.
 player.servers.hypixel.karma; //returns the players hypixel karma.
 
+//im way to lazy to document all the hypixel stats so to see them all go to the website your using jsmc on and do player.servers.hypixel.stats in the inspect element console.
+
 //HYPIXEL GUILDS
 player.servers.hypixel.guild.name; //returns the guild name of the guild the player is currently in.
 player.servers.hypixel.guild.createdAt; //returns the creation date of the guild that the player is in.
