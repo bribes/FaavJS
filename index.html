@@ -114,8 +114,9 @@
          var status = "Offline";
          }
                   document.getElementById("status").innerHTML = `Hypixel Player Status: ${status}`;
-         document.getElementById("level").innerHTML = `Hypixel Level: ${player.servers.hypixel.networkLevel}`
-         document.getElementById("skylevel").innerHTML = `Hypixel Level: ${player.servers.hypixel.stats.SkyWars.level}`
+         document.getElementById("level").innerHTML = `Hypixel Level: ${player.servers.hypixel.networkLevel}`;
+         document.getElementById("skylevel").innerHTML = `Hypixel SkyWars Level: ${player.servers.hypixel.stats.SkyWars.level}`;
+         document.getElementById("bedlevel").innerHTML = `Hypixel Bedwars Level: ${player.servers.hypixel.stats.Bedwars.level}`;
                   }
                   jsmc(name);
                
@@ -129,6 +130,7 @@
          <span id="type"></span><br>
          <span id="level"></span><br>
          <span id="skylevel"></span><br>
+         <span id="bedlevel"></span><br>
          <span id="status"></span><br>
          <div id="hypixelRank"></div>
          <span id="namehistory"></span><br>
