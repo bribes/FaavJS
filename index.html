@@ -8,11 +8,11 @@
          var name = "Seeped"; //Username Here
                   function code() {
                      var type = null;
-                     if (player.status == "msa") {
+                     if (player.type == "msa") {
             type = "Microsoft";
-            } else if (player.status == "normal") {
+            } else if (player.type == "normal") {
             type = "Normal (Mojang OR Microsoft)";
-            } else if (player.status == "legacy") {
+            } else if (player.type == "legacy") {
             type = "Legacy";
             }
                      if (player.servers.hypixel.newPackageRank != undefined) {
