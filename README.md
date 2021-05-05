@@ -9,7 +9,7 @@ This is a simple javascript package for getting minecraft user data.
 ## Installation
 
 ```html
-<script src="https://withdrew.github.io/FaavJS/FaavJS@v1.0.min.js"></script>
+<script src="https://withdrew.github.io/FaavJS/FaavJS@v1.1.min.js"></script>
 <script>
   var name = "Seeped"; //Username Here
 function code() {
@@ -57,6 +57,8 @@ player.renders.bust_2; //returns a render of the players bust. Ex. https://visag
 
 player.renders.head_1; //returns a render of the players head. Ex. https://mc-heads.net/head/eb74d592-71f8-4b1e-a1b1-ba76a12d8858
 player.renders.head_2; //returns a render of the players head. Ex. https://visage.surgeplay.com/head/eb74d59271f84b1ea1b1ba76a12d8858?overlay
+
+player.renders.combo; //returns a render of the players face and avatar. Ex. https://mc-heads.net/combo/eb74d592-71f8-4b1e-a1b1-ba76a12d8858
 
 //PLAYER COSMETICS
 
@@ -111,7 +113,7 @@ player.error; //returns if there is a error or not. The response can either be t
 <html>
    <head>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-      <script src="https://withdrew.github.io/FaavJS/FaavJS@v1.0.min.js"></script>
+      <script src="https://withdrew.github.io/FaavJS/FaavJS@v1.1.min.js"></script>
       <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
       <link href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" rel="stylesheet">
       <script>
