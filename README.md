@@ -42,7 +42,7 @@ player.uuid; //returns the players uuid with dashes. Ex. eb74d592-71f8-4b1e-a1b1
 player.id; //returns the players uuid without dashes. Ex. eb74d59271f84b1ea1b1ba76a12d8858
 player.name_history; //returns the players name history.
 player.status; //returns the status of the name. The response can be taken, available, blocked, or invalid.
-player.type; //returns the account type of the player. The response can be normal, legacy, or nonexistent. (normal means the account is either a Mojang or Microsoft account)
+player.type; //returns the account type of the player. The response can be normal, msa, legacy, or nonexistent. (normal means the account is a Mojang account, and msa means the acc account is a Microsoft Account)
 player.skin; //returns an image of the players skin. Ex. https://crafatar.com/skins/eb74d59271f84b1ea1b1ba76a12d8858
 
 //PLAYER RENDERS
