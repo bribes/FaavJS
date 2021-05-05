@@ -1,8 +1,8 @@
 # FaavJS
 
-## Changelog
+### Changelog
 
-- rebranded to FaavJS.
+- added the combo render.
 
 This is a simple javascript package for getting minecraft user data.
 
