@@ -23,13 +23,13 @@ lookup(name);
 
 https://playerdb.co/
 
-https://crafatar.com/
-
-https://visage.surgeplay.com/
-
 https://api.gapple.pw/
 
 https://mc-heads.net/
+
+https://visage.surgeplay.com/
+
+https://crafatar.com/
 
 https://api.hypixel.net/
 
