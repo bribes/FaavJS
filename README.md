@@ -33,6 +33,8 @@ https://crafatar.com/
 
 https://api.hypixel.net/
 
+lucky swede on top
+
 ## Usage
 
 ```javascript
