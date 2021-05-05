@@ -1,10 +1,10 @@
 # FaavJS
 
+FaavJS is a easy to use javascript package for getting minecraft user data.
+
 ### Changelog
 
 - added the combo render.
-
-This is a simple javascript package for getting minecraft user data.
 
 ## Installation
 
