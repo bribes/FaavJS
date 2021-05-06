@@ -9,7 +9,7 @@ FaavJS is a easy to use javascript package for getting minecraft user data.
 ## Installation
 
 ```html
-<script src="https://withdrew.github.io/FaavJS/FaavJS@v1.1.min.js"></script>
+<script src="https://withdrew.github.io/FaavJS/FaavJS@v1.2.min.js"></script>
 <script>
   var name = "Seeped"; //Username Here
 function code() {
@@ -44,6 +44,7 @@ player.uuid; //returns the players uuid with dashes. Ex. eb74d592-71f8-4b1e-a1b1
 player.id; //returns the players uuid without dashes. Ex. eb74d59271f84b1ea1b1ba76a12d8858
 player.name_history; //returns the players name history.
 player.status; //returns the status of the name. The response can be taken, available, blocked, or invalid.
+player.droptime; //returns when the name drops. This only shows up if player.status is equal to soon. (IN UNIX TIME)
 player.type; //returns the account type of the player. The response can be normal, msa, legacy, or nonexistent. (normal means the account is a Mojang account, and msa means the account is a Microsoft Account)
 player.skin; //returns an image of the players skin. Ex. https://crafatar.com/skins/eb74d59271f84b1ea1b1ba76a12d8858
 
@@ -115,7 +116,7 @@ player.error; //returns if there is a error or not. The response can either be t
 <html>
    <head>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-      <script src="https://withdrew.github.io/FaavJS/FaavJS@v1.1.min.js"></script>
+      <script src="https://withdrew.github.io/FaavJS/FaavJS@v1.2.min.js"></script>
       <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
       <link href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" rel="stylesheet">
       <script>
