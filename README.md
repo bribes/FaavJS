@@ -1,6 +1,6 @@
 # FaavJS
 
-FaavJS is a easy to use javascript package for getting minecraft user data.
+FaavJS is a all in one, easy to use javascript package for getting minecraft user data.
 
 ### Changelog
 
