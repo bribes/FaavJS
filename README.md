@@ -125,8 +125,8 @@ player.error; //returns if there is a error or not. The response can either be t
                      var type = null;
                      if (player.type == "msa") {
             type = "Microsoft";
-            } else if (player.type == "normal") {
-            type = "Normal (Mojang OR Microsoft)";
+            } else if (player.type == "mojang") {
+            type = "Mojang";
             } else if (player.type == "legacy") {
             type = "Legacy";
             }
@@ -238,7 +238,7 @@ player.error; //returns if there is a error or not. The response can either be t
          if (player.servers.hypixel.stats.Bedwars !== undefined) {
          document.getElementById("bedlevel").innerHTML = `Hypixel Bedwars Level: ${player.servers.hypixel.stats.Bedwars.level}`;
          } else {
-         document.getElementById("bed").remove();
+         document.getElementById("bedlevel").remove();
          }
                   }
                   lookup(name);
