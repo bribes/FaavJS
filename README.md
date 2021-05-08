@@ -116,7 +116,7 @@ player.error; //returns if there is a error or not. The response can either be t
 <html>
    <head>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-      <script src="https://withdrew.github.io/FaavJS/FaavJS@v1.2.min.js"></script>
+      <script src="https://withdrew.github.io/FaavJS/FaavJS@v1.3.min.js"></script>
       <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
       <link href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" rel="stylesheet">
       <script>
