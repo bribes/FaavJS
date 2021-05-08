@@ -9,7 +9,7 @@ FaavJS is a all in one easy to use javascript package for getting minecraft user
 ## Installation
 
 ```html
-<script src="https://withdrew.github.io/FaavJS/FaavJS@v1.2.min.js"></script>
+<script src="https://withdrew.github.io/FaavJS/FaavJS@v1.3.min.js"></script>
 <script>
   var name = "Seeped"; //Username Here
 function code() {
@@ -66,7 +66,7 @@ player.renders.combo; //returns a render of the players face and avatar. Ex. htt
 //PLAYER COSMETICS
 
 //CAPES
-player.cosmetics.capes.official; //returns a image of the players official cape. Ex. https://crafatar.com/capes/403e6cb7a6ca440a80417fb1e579b5a5
+player.cosmetics.capes.official; //returns a image of the players official cape. Ex. https://api.gapple.pw/cors/textures/a2e8d97ec79100e90a75d369d1b3ba81273c4f82bc1b737e934eed4a854be1b6 (can return that or null if the user doesn't have a official cape)
 player.cosmetics.capes.optifine; //returns a image of the players optifine cape. Ex. https://api.gapple.pw/cors/optifine/Seeped
 player.cosmetics.capes.labymod; //returns a image of the players laby mod cape. Ex. https://api.gapple.pw/cors/labymod/cape/6a836b80-2488-4703-85a7-f130b2097ee0
 
