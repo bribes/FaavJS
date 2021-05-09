@@ -21,17 +21,15 @@ lookup(name);
 
 ## APIs used
 
-https://playerdb.co/
+[Ashcon](https://github.com/Electroid/mojang-api)
 
-https://api.gapple.pw/
+[Gapple](https://api.gapple.pw/)
 
-https://mc-heads.net/
+[MCHeads](https://mc-heads.net/)
 
-https://visage.surgeplay.com/
+[Visage](https://visage.surgeplay.com/)
 
-https://crafatar.com/
-
-https://api.hypixel.net/
+[Hypixel](https://api.hypixel.net/)
 
 lucky swede on top
 
